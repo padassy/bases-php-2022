@@ -19,13 +19,13 @@ Les noms de variables suivent les mêmes règles de nommage que les autres entit
 <pre>
     $lulu = 5;
     $lala = "yes";
-    $5main = 3; <!-- ne fonctionnera pas à cause du chiffre en premièe place-->
+    $5main = 3; <!-- ne fonctionnera pas à cause du chiffre en première place-->
     $_____coucou = 7;
     $bool = true; 
     $bool 2 = false; <!-- ne fonctionnera pas à cause de l'espace -->
     $je-t-aime = "pas";  <!-- ne fonctionnera pas à cause du "-" -->
     $ILoveYou = "me too";
-    $6-repos = 77;   <!-- ne fonctionnera pas à cause du chiffre en premièe place-->
+    $6-repos = 77;   <!-- ne fonctionnera pas à cause du chiffre en première place-->
     $bon-homme = true;    <!-- ne fonctionnera pas à cause du "-" -->
     $lkhjfgt5468sd58757 = 677;
     $mabapta = $lulu;
