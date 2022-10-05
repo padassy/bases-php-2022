@@ -17,28 +17,45 @@ Les noms de variables suivent les mêmes règles de nommage que les autres entit
 <p>Elles peuvent être manipulées, affichées, sauvegardées, détruites etc...</p>
 <h4>Mettez les variables valides (même les déconseillées) dans les balises PHP</h4>
 <pre>
-    $lulu = 5;
-    $lala = "yes";
-    $5main = 3;
-    $_____coucou = 7;
-    $bool = true;
-    $bool 2 = false;
-    $je-t-aime = "pas";
-    $ILoveYou = "me too";
-    $6-repos = 77;
-    $bon-homme = true;
-    $lkhjfgt5468sd58757 = 677;
+    $lulu = 5; Marche
+    $lala = "yes"; Marche
+    $5main = 3; Ne marche pas 
+    $_____coucou = 7; Marche
+    $bool = true; Marche 
+    $bool 2 = false; Marche pas 
+    $je-t-aime = "pas"; Marche pas 
+    $ILoveYou = "me too"; Marche
+    $6-repos = 77; Ne marche pas 
+    $bon-homme = true; Ne marche pas 
+    $lkhjfgt5468sd58757 = 677; Marche
     $mabapta = $lulu;
 </pre>
 <hr>
 <?php
     $lulu = 5;
-    echo '$lulu = ';
+    echo'$lulu <br';
     echo "$lulu <br>";
 
-    $lala = "yes";
-    echo '$lala = ';
-    echo "$lala <br>";
+    $_____coucou = 7;
+    echo'$_____coucou <br>';
+    echo"$_____coucou <br>";
+
+    $bool = true;
+    echo '$bool <br>';
+    echo "$bool <br>";
+
+
+    $ILoveYou = "me too";
+    echo '$ILoveYou <br>';
+    echo "$ILoveYou <br>";
+
+    $lkhjfgt5468sd58757 = 677;
+    echo '$lkhjfgt5468sd58757 <br>';
+    echo "$lkhjfgt5468sd58757 <br>";
+
+    $mabapta = $lulu;
+    echo '$mabapta <br>';
+    echo "$mabapta <br>";
 
 
 ?>
