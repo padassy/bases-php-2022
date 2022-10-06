@@ -23,5 +23,51 @@
     echo 'mettre tout en majuscule : strtoupper($monTitre) '.strtoupper($monTitre);
     ?>
     <p><a href="https://www.php.net/manual/fr/book.strings.php" target="_blank">string</a></p>
-</body>
+
+    <h2>Les numériques </h2>
+    <p>Les numériques sont des variables les plus utilisées pour les calculs, il existe plusieurs sous-types de ceux-ci</p>
+    <h3>Les entiers (integer, int) </h3>
+    <p>Sont des entiers , les nombres sans virgules, positifs comme négatifs </p>
+    <pre>$myFirstInt=22;
+    $mySecondInt= -7;</pre>
+    <?php
+    $myFirstInt=22;
+    $mySecondInt= -7;
+    ?>
+    </hr>
+
+    <?php
+
+    echo $myFirstInt; 
+    echo "<br>";
+
+    //addition
+    $add = $myFirstInt + $mySecondInt; 
+    echo $add ;
+    echo "<br>";
+
+    // soustraction 
+
+    $sous = $myFirstInt-$mySecondInt; 
+    echo $sous ; 
+    echo "<br>"; 
+
+    // multiplication 
+
+    $multi = $myFirstInt * $mySecondInt;
+    echo $multi; 
+    echo "<br>";
+
+    // divistion 
+
+    $divis = $myFirstInt / $mySecondInt;
+    echo $divis; 
+    echo "<br>"; 
+
+
+    //outils de débogage le plus communs 
+    //var_dumb($monTitre,$myFirstInt, $mySecondInt);
+    // outils de débogage 
+    ?>
+</body> 
 </html>
