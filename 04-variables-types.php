@@ -29,6 +29,7 @@
     <p>Sont des entiers les nombres sans virgules, positifs comme négatifs</p>
     <pre>$myFirstInt = 22;
 $mySecondInt = - 7;</pre>
+    <p>Les calculs de base se font avec les signes + - * /</p>
     <?php
     $myFirstInt = 22;
     $mySecondInt = - 7;
@@ -54,18 +55,23 @@ $mySecondInt = - 7;</pre>
     // division
     $div = $myFirstInt / $mySecondInt;
     echo $div;
-    echo "<br>";
+    echo " - Ce dernier, résultat de la division, devient un float<br>";
 
 
     ?>
 
+    <h3>Les chiffres à virgule (float, double, nombres réels)</h3>
+    <p>Ils ont le type float, attention en cas de calcul en base 10, on peut avoir des erreurs du au fait que les ordinateurs travaillent sur les calculs en base 16<br>! On utilise le . et pas la , comme séparateur ! <a href="https://floating-point-gui.de/" target="_blank">What Every Programmer Should Know About Floating-Point Arithmetic</a></p>
 
+    <?php
+    $firstFloat = 8.27;
+    $secondFloat = -79.789435185755468; // il manque 3 caractères
 
-
+    ?>
     <hr>
     <?php
     // outil de débogage le plus commun
-    var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div);
+    var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div,$firstFloat,$secondFloat);
 
     ?>
 </body>
