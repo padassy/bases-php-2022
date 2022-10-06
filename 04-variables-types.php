@@ -68,6 +68,11 @@ $mySecondInt = - 7;</pre>
     $secondFloat = -79.789435185755468; // il manque 3 caractères
 
     ?>
+    <h2>Les booléens (bool, boolean)</h2>
+    <p>Variable représentant sur un seul bit les 2 possibilités du binaire: true ou false </p>
+    <?php
+    
+    ?>
     <hr>
     <?php
     // outil de débogage le plus commun
