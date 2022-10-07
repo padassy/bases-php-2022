@@ -71,13 +71,47 @@ $mySecondInt = - 7;</pre>
     <h2>Les booléens (bool, boolean)</h2>
     <p>Variable représentant sur un seul bit les 2 possibilités du binaire: true ou false </p>
     <?php
-    
+    $bool1 = true ; 
+    $bool2 = false;
     ?>
     <hr>
+    <h2>Les types NULL</h2>
+    <p>le type null est une variable sans valeur</p>
+    <?php
+    $nada = Null ;
+    ?>
+    <h2>Les types de tableaux (array)</h2>
+    <p>les tableauw permettent de contenir plusieurs variables à l'interieur d'une variable de type array. Ils sont multi dimensionnels, càd ont peut avoir autant de tableaux que necessaire dans un tableau .</p>
+    <p>Il existe 2 types de tableaux: les tableauc indexés et les tableaux associatifs</p>
+    <h3>Tableau indexé</h3>
+    <p>Il ne contient que des valeurs, les clefs sont attribuées par PHP</p>
+    <hr>
+    <?php
+    //création tableau indexé
+    $tab1 = array (5, "Lulu", "Dupuis", true);
+    // débigage de tableau ou objet avec print_r moins précis que var_dump
+    print_r($tab1);
+    // on veut afficher la 2ème clé 
+    echo $tab1[1];
+    ?>
+    <h3>Tableau associatifs</h3>
+    <p> tableau dont on a indiqué au moins 1 des clés, ce qui en fait un tableau associatif</p>
+    <?php
+    //création dun tableau associatif 
+    $tab2 = array ("un" =>1,
+                    "deux"=>2,
+                    "trois"=>3,
+                    17 => "coucou", 
+                    "lala");
+
+    print_r($tab2);
+    echo $tab2["deux"];
+    ?>
     <?php
     // outil de débogage le plus commun
-    var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div,$firstFloat,$secondFloat);
+    var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div,$firstFloat,$secondFloat,$bool1,$bool2,$nada, $tab1, $tab2);
 
     ?>
+    
 </body>
 </html>
