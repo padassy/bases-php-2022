@@ -8,7 +8,7 @@ $tab = [
     27.12,
     [
         "coucou",
-        "Vous",
+        "vous",
         "allez",
         "bien?",
         [
@@ -55,7 +55,7 @@ echo $tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>" donne :
 
 <strong>Moi ce que je veux c'est (exe2) :</strong>
 
-coucou Vous allez bien? 
+Coucou vous allez bien? 
 yes, je vais bien!
 
 <strong>Dans un fichier nommé 06-exe2-{prenom}.php</strong>
@@ -64,6 +64,7 @@ yes, je vais bien!
 
 coucou, vous allez bien? 
 Yes, je vais bien!
+
 
 </code></pre>
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
