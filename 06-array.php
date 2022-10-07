@@ -51,6 +51,7 @@ print_r($tab);
 echo $tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>" donne :
 
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
+<?=$tab[5][4][1]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
 
 <strong>Moi ce que je veux c'est (exe2) :</strong>
 
@@ -65,5 +66,7 @@ coucou, vous allez bien?
 Yes, je vais bien!
 
 </code></pre>
+<?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
+<?=$tab[5][4][1]." ".$tab[5][4][2]." <br>";?>
 </body>
 </html>
