@@ -3,11 +3,11 @@
 $tab = [
     5,
     8,
-    "Coucou",
+    "coucou",
     false,
     27.12,
     [
-        "Coucou",
+        "coucou",
         "vous",
         "allez",
         "bien?",
