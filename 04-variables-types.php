@@ -14,6 +14,7 @@
     <?php
     // création de la variable (ici en camelCase), avec le = qui donne la valeur. En procédural, le typage strict n'est pas obligatoire
     $monTitre = "Bientôt la fin de ce cours interminable !";
+
     // affichage du contenu de la variable avec une chaîne concaténée (utilisation du . ou de la virgule) - gettype est une fonction permettant de récupérer le typage d'une variable (en PHP 8 on utilisera plutôt get_debug_type())
     echo $monTitre." Yes! <br>";
     echo "Le type de la variable est ".gettype($monTitre).' !';
@@ -71,8 +72,45 @@ $mySecondInt = - 7;</pre>
     <h2>Les booléens (bool, boolean)</h2>
     <p>Variable représentant sur un seul bit les 2 possibilités du binaire: true ou false </p>
     <?php
+<<<<<<< HEAD
     $bool1 = true ; 
     $bool2 = false;
+=======
+    $bool1 = true;
+    $bool2 = false;
+    ?>
+    <h2>Les type NULL (NULL)</h2>
+    <p>Le type NULL est une variable sans valeurs</p>
+    <?php
+    $nada = NULL;
+    ?>
+    <h2>Les type tableaux (array)</h2>
+    <p>Les tableaux permettent de contenir plusieures variables à l'intérieur d'une variable de type array. Ils sont multidimentionnels, càd on peut avoir autant de tableaux que nécessaire dans un tableau.</p><p>Il existe 2 types de tableaux : Les tableaux indexés, et les tableaux associatifs</p>
+    <h3>Tableau indexé</h3>
+    <p>Il ne contient que des valeurs, les clefs sont attribuées par PHP</p>
+    <?php
+    // création d'un tableau indexé
+    $tab1 = array(5,"Lulu","Dupuis",true);
+    // débogage de tableaux ou objets avec print_r, moins complet que le var_dump
+    print_r($tab1);
+    // on veut afficher la 2eme clef:
+    echo $tab1[1];
+    ?>
+    <h3>Tableau associatif</h3>
+    <p>Tableau dont on a indiqué au moins 1 des clefs, ce qui en fait un tableau associatif</p>
+    <?php
+    // création d'un tableau associatif
+    $tab2 = array( "un"=>1,
+                   "deux"=>2,
+                   "trois"=>3,
+                   4 => "coucou", 
+                   "lala",
+                   array(1,2,3),
+                 );
+    // débogage de tableaux ou objets avec print_r, moins complet que le var_dump
+    print_r($tab2);
+    echo $tab2["deux"];
+>>>>>>> 504ac4e886e3eb338a283e8f0b51c562cf70c4fe
     ?>
     <hr>
     <h2>Les types NULL</h2>
@@ -109,9 +147,16 @@ $mySecondInt = - 7;</pre>
     ?>
     <?php
     // outil de débogage le plus commun
+<<<<<<< HEAD
     var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div,$firstFloat,$secondFloat,$bool1,$bool2,$nada, $tab1, $tab2);
 
     ?>
     
+=======
+    var_dump($monTitre,$myFirstInt,$mySecondInt, $add, $sous, $multi,$div,$firstFloat,$secondFloat,$bool1,$bool2,$nada,$tab1,$tab2);
+
+    ?>
+
+>>>>>>> 504ac4e886e3eb338a283e8f0b51c562cf70c4fe
 </body>
 </html>
