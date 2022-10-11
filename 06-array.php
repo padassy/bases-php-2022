@@ -67,7 +67,25 @@ Yes, je vais bien!
 
 
 </code></pre>
+<h3>V1</h3>
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
-<?=$tab[5][4][1]." ".$tab[5][4][2]." <br>";?>
+<?=$tab[5][4][1].", ".$tab[5][4][2]." <br>";?>
+<h3>V2</h3>
+<?=ucfirst($tab[2])." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
+<?=ucfirst($tab[5][4][1]).", ".$tab[5][4][2]." <br>";?>
+
+<h2>Le tableau associatif</h2>
+<p>La principale différence avecle tableau indexé est que l'on modifie au moins une clef, avec un numérique ou chaîne de caractère!</p>
+<?php
+$tab = array(2 => "un", "deux","trois");
+var_dump($tab);
+$tabAssoc = [
+    "id"=>29,
+    "prenom"=>"Yanis",
+    'nom'=> "Goodlife",
+    "mail"=> "mail@mail.com",
+];
+var_dump($tabAssoc);
+?>
 </body>
 </html>
