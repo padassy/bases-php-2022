@@ -56,6 +56,16 @@ echo --$i; // 0 car la décrémentation se fait avant l'affichage
 for ($i=100;$i>=0;$i--){
     echo "$i ";
 }
+echo "<br>";
+// affichez moi tous les paires entre 2 et 1000 séparé par un espace 
+for ($i=2;$i<=1000;$i+=2){
+    echo "$i ";
+}
+echo "<br>";
+// affichez moi tous les impaire entre 1 et -99
+for ($i=1;$i>=-99;$i-=2){
+    echo "$i ";
+}
 ?>
 </body>
 </html>
