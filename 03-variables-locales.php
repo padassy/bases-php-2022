@@ -14,7 +14,7 @@ Les noms de variables suivent les mêmes règles de nommage que les autres entit
 
 <h2>Utilité des variables</h2>
 <p>Elles servent à stocker des informations</p>
-<p>Elles peuvent être manipulées, affichées, sauvegardées, détruites etc...</p>
+<p>Elles peuvent être manipulées, affichées, sauvegardées,   détruites etc...</p>
 <h4>Mettez les variables valides (même les déconseillées) dans les balises PHP</h4>
 <pre>
     $lulu = 5;
