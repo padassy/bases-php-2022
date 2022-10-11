@@ -8,7 +8,7 @@ $tab = [
     27.12,
     [
         "coucou",
-        "vous",
+        "Vous",
         "allez",
         "bien?",
         [
@@ -34,7 +34,7 @@ $tab = [
     <p>En PHP on a 2 manières de créer des tableaux : </p>
     <pre><code>
 $tab = array(); // manière longue
- 
+
 $tab = []; // manière courte
     </code></pre>
     <h2>Les tableaux indexés</h2>
@@ -51,23 +51,22 @@ print_r($tab);
 echo $tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>" donne :
 
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
-<?=$tab[5][4][1]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
 
 <strong>Moi ce que je veux c'est (exe2) :</strong>
 
-Coucou vous allez bien? 
+coucou Vous allez bien? 
 yes, je vais bien!
 
 <strong>Dans un fichier nommé 06-exe2-{prenom}.php</strong>
 
 <strong>Et pour ceux pour qui c'est facile, je veux obtenir:</strong>
 
-Coucou, vous allez bien? 
+coucou, vous allez bien? 
 Yes, je vais bien!
-
 
 </code></pre>
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
+
 <?=$tab[5][4][1]." ".$tab[5][4][2]." <br>";?>
 </body>
 </html>
