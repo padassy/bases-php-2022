@@ -51,7 +51,12 @@ echo $i--; // 2 car affiche $i avant de diminuer de 1
 echo $i // 1
 echo --$i; // 0 car la décrémentation se fait avant l'affichage
 </code></pre>
-
+<?php
+// affichez moi les chiffres de 0 à 100 séparé par un espace
+for ($i=100;$i>=0;$i--){
+    echo "$i ";
+}
+?>
 </body>
 </html>
 
