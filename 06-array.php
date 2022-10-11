@@ -62,7 +62,7 @@ yes, je vais bien!
 
 <strong>Et pour ceux pour qui c'est facile, je veux obtenir:</strong>
 
-coucou, vous allez bien? 
+Coucou, vous allez bien? 
 Yes, je vais bien!
 
 
