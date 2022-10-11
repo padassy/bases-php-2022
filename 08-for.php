@@ -40,7 +40,17 @@ for($i= -10; $i<=10; $i+=2){
 ?>
 <h3>Décrémentation de 1</h3>
 <p>Soustrait 1 de la variable</p>
-
+<pre><code>$i=5;
+$i = $i-1;
+echo $i; // 4
+$i -= 1;
+echo $i; // 3
+$i--;
+echo $i; // 2
+echo $i--; // 2 car affiche $i avant de diminuer de 1
+echo $i // 1
+echo --$i; // 0 car la décrémentation se fait avant l'affichage
+</code></pre>
 
 </body>
 </html>
