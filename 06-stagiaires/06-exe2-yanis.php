@@ -8,7 +8,7 @@ $tab = [
     27.12,
     [
         "coucou",
-        "vous",
+        "Vous",
         "allez",
         "bien?",
         [
@@ -51,41 +51,22 @@ print_r($tab);
 echo $tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>" donne :
 
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
-<?=$tab[5][4][1]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
 
 <strong>Moi ce que je veux c'est (exe2) :</strong>
 
-Coucou vous allez bien? 
+coucou Vous allez bien? 
 yes, je vais bien!
 
 <strong>Dans un fichier nommé 06-exe2-{prenom}.php</strong>
 
 <strong>Et pour ceux pour qui c'est facile, je veux obtenir:</strong>
 
-Coucou, vous allez bien? 
+coucou, vous allez bien? 
 Yes, je vais bien!
 
-
 </code></pre>
-<h3>V1</h3>
 <?=$tab[2]." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
-<?=$tab[5][4][1].", ".$tab[5][4][2]." <br>";?>
-<h3>V2</h3>
-<?=ucfirst($tab[2])." ".$tab[5][1]." ".$tab[5][2]." ".$tab[5][3]." <br>";?>
-<?=ucfirst($tab[5][4][1]).", ".$tab[5][4][2]." <br>";?>
 
-<h2>Le tableau associatif</h2>
-<p>La principale différence avecle tableau indexé est que l'on modifie au moins une clef, avec un numérique ou chaîne de caractère!</p>
-<?php
-$tab = array(2 => "un", "deux","trois");
-var_dump($tab);
-$tabAssoc = [
-    "id"=>29,
-    "prenom"=>"Yanis",
-    'nom'=> "Goodlife",
-    "mail"=> "mail@mail.com",
-];
-var_dump($tabAssoc);
-?>
+<?=$tab[5][4][1]." ".$tab[5][4][2]." <br>";?>
 </body>
 </html>
