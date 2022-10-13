@@ -34,7 +34,7 @@ $tab = [
     <p>En PHP on a 2 manières de créer des tableaux : </p>
     <pre><code>
 $tab = array(); // manière longue
-
+ 
 $tab = []; // manière courte
     </code></pre>
     <h2>Les tableaux indexés</h2>
