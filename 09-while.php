@@ -20,7 +20,7 @@
         $i+=5;
     }
     echo "<hr>";
-    // voici un tableau indéxé avec 5 valeurs
+    // voici un tableau indéxé avec  valeurs
     $tab = [0,1,2,3,4,5,6,7,8];
 
     // seul le 0 représent false, les autres valeurs valent true
