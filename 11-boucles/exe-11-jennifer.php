@@ -64,7 +64,7 @@ $stagiairesArrayObject=  new ArrayObject ($stagiaires);
 $stagiairesArrayObject->asort();//asort garde les clefs et sort réinitialise les clefs
 
 foreach($stagiairesArrayObject as $value ){
-    sort($stagiaires);
+
     echo "$value\n| ";
 }
 ?>
@@ -76,7 +76,6 @@ foreach($stagiairesArrayObject as $value ){
 <hr>
 <?php
 
-$hasard = mt_rand(0,17);
 
 
 
