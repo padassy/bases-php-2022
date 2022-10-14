@@ -28,7 +28,7 @@ $nb2 = 0;
 
 $nb3 = 100;
 
-asort($stagiaires);
+
 
 ?>
 <?php
@@ -48,6 +48,7 @@ foreach($stagiaires as $key => $value){
 ?>
 <br><br>
 <?php
+asort($stagiaires);
 foreach($stagiaires as $value){
     echo $value;
 }
