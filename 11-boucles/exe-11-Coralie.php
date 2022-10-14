@@ -18,7 +18,7 @@ $stagiaires=[
     "Jennifer",
     "Valérie",
 ];
-asort($stagiaires);
+
 
 $hasard = mt_rand(0,17);
 
@@ -68,10 +68,19 @@ foreach($stagiaires as $key => $value){
     <h3>Exe 3</h3>
     <p>Voir la doc sur les tableaux : Affichez tous les noms des variables stagiaires classés par ordre alphabétique séparés par un " | " </p>
     <?php
-        foreach($stagiaires as $value){
-            asort($stagiaires);
+        echo "<p>asort -> classe par valeurs ascendantes en gardant la clef liée à sa valeur</p>"; 
+        asort($stagiaires);
+        foreach($stagiaires as $key => $value){
             
-            echo $value." | " ;
+            echo $value." - $key | " ;
+            
+        };
+        echo "<hr>";
+        echo "<p>sort -> classe par valeurs ascendantes en réinitialisant la clef qui n'a plus de lien d'origine avec la clef</p>";
+        sort($stagiaires);
+        foreach($stagiaires as $key => $value){
+            
+            echo $value." - $key | " ;
             
         };
         ?>
@@ -96,7 +105,7 @@ foreach($stagiaires as $key => $value){
 
     <?php
 
-    for($nb3 = 100 ; $nb3 >= -100 ; $nb3-=3){
+    for($i = $nb3 ; $i >= $nb1 ; $i-=3){
         echo "$nb3 ";
     }
     
