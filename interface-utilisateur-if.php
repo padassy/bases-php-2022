@@ -5,9 +5,9 @@ var_dump($_POST);
 if (isset($_POST['temperature'])){
     echo "ok";}
     // on va créer une variable temporaire locale et changer le typage de notre variable en entier en utilisant (int) pour integer, si ca fonctionne ca nous donne un numérique, en cas d'echec ca nous donne le numérique 0
-    $temp = (int) $_POST['temperature'];
+    $temp =(int)$_POST['temperature'];
     var_dump($temp);
-    if ($temp ===0){/*$to      = 'padassy@gmail.com';
+    if ($temp ===0)/*$to      = 'padassy@gmail.com';
         $subject = 'Message du pape';
         $message = 'Tu as été touché par la grace du dieu ';
         $headers = 'From: francois@vatican.va' . "\r\n" .
@@ -17,8 +17,8 @@ if (isset($_POST['temperature'])){
         mail($to, $subject, $message, $headers);
         //mail ("padassy@gmail.com", "Salut couillon", "Voici un message du pape", "from:francois@vatican.va". "\r\n" .'Reply-To: francois@vatican.va' . "\r\n" .'X-Mailer: PHP/' . phpversion();)
         //header("Location :https://cdn4.vectorstock.com/i/1000x1000/13/93/no-stupid-people-beyond-this-point-vintage-rusty-vector-35281393.jpg");
-        //exit ();*/
-    }
+        //exit ();*/;
+    
 ?>
 <!DOCTYPE html>
 <html lang="en">
