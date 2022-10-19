@@ -35,16 +35,16 @@ if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
         if (isset($choix)){
             echo("Resultat du calcul ".$first.$choix.$second." : ");
     
-            if ($choix=="+" && is_numeric($first + $second)) {
-                echo "$first + $second";
-            } elseif ($choix == "-" && is_numeric($first - $second)) {
-                echo "$first - $second";
-            } elseif ($choix == "*" && is_numeric($first * $second)) {
-                echo "$first * $second";
-            } elseif ($second == 0 && is_numeric($first / $second))
+            if ($choix =="+") {
+                echo $first + $second;
+            } elseif ($choix == "-") {
+                echo $first - $second;
+            } elseif ($choix == "*") {
+                echo $first * $second;
+            } elseif ($second == 0)
                 echo "Vous ne pouvez pas diviser par 0";
             else {
-                echo "$first / $second";
+                echo $first / $second;
             }
         }
 
