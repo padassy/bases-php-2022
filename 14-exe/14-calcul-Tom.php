@@ -12,31 +12,29 @@
         <select name="choix">
             <option value="addition">+</option>
             <option value="soustraction">-</option>
-            <option value="division">*</option>
-            <option value="multiplication">/</option>
+            <option value="division">/</option>
+            <option value="multiplication">*</option>
         </select>
         <input type="text" name="second" />
         <input type="submit" value="Calculer"/>
     </form>
-    <?php
-    if(isset($reponse)):
-        echo $reponse;
-    endif;
-    ?>
+
     <hr>
     <?php
     var_dump($_POST);
     ?>
 <?php
+// existance de toutes les variables
 if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
-   
-  
-    $nombre1 =($_POST['first']);
-    $choix = ($_POST['choix']);
-    $nombre2 = ($_POST['second']);
-    if($nombre1 != NULL AND $nombre2 != NULL)
+   // les 2 variables ne contiennent que du numérique
+    if(is_numeric($_POST['first']) AND is_numeric($_POST['second']))
     {
-        if($choix == 'division' AND $nombre2 == 0)
+  
+    $nombre1 =$_POST['first'];
+    $choix = $_POST['choix'];
+    $nombre2 = $_POST['second'];
+    
+        if($choix == 'division' AND $nombre2 == "0")
         {
             echo 'On peut pas diviser par 0 !';
         }
