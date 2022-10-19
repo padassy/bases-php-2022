@@ -1,11 +1,3 @@
-<?php
-if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
-    // exemple si on a envoyé le formulaire
-    $reponse ="formulaire envoyé";
-
-    // vérification des champs (!! on ne peut pas diviser par 0)
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,22 +24,38 @@ if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
         <input type="submit" value="Calculer"/>
     </form>
     <?php
-        if (isset($choix)){
-            echo("Resultat du calcul ".$first.$choix.$second." : ");
-    
-            if ($choix =="+") {
-                echo $first + $second;
-            } elseif ($choix == "-") {
-                echo $first - $second;
-            } elseif ($choix == "*") {
-                echo $first * $second;
-            } elseif ($second == 0)
-                echo "Vous ne pouvez pas diviser par 0";
-            else {
-                echo $first / $second;
-            }
-        }
 
+    if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
+    // exemple si on a envoyé le formulaire
+    $reponse ="formulaire envoyé";
+
+    // vérification des champs (!! on ne peut pas diviser par 0)
+}  
+        if(is_numeric($_POST['first'])AND is_numeric($_POST['second'])){
+
+            $premier= (float) $_POST['first'];
+            $deuxieme= (float) $_POST['second'];
+            $choix= $_POST['choix'];
+
+            if ($choix == "+") {
+                 $result=$first+$second;
+                 echo $result;
+            } elseif ($choix == "-") {
+                 $result=$first-$second;
+                 echo $result;
+            } elseif ($choix == "*") {
+                 $result=$first*$second;
+                 echo $result;
+            } elseif ($second == 0) {
+                 echo "Vous ne pouvez pas diviser par 0";
+            } elseif ($choix == "/"){
+                 $result=$first/$second;
+                 echo $result;
+            }
+
+        if (isset($choix)){
+        echo("Resultat du calcul ".$first.$choix.$second." = ".$result);}
+        }
     if(isset($reponse)):
         echo $reponse;
     endif;
@@ -55,6 +63,9 @@ if(isset($_POST['first'],$_POST['choix'],$_POST['second'],)){
     <hr>
     <?php
     var_dump($_POST);
+    if (isset($result)){
+        echo "$result";
+    }
     ?>
 </body>
 </html>
