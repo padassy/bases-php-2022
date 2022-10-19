@@ -30,35 +30,34 @@
     $reponse ="formulaire envoyé";
 
     // vérification des champs (!! on ne peut pas diviser par 0)
-}  
-        if(is_numeric($_POST['first'])AND is_numeric($_POST['second'])){
+
+        if(is_numeric($_POST['first'])AND is_numeric($_POST['second']))
 
             $premier= (float) $_POST['first'];
             $deuxieme= (float) $_POST['second'];
             $choix= $_POST['choix'];
 
             if ($choix == "+") {
-                 $result=$first+$second;
+                 $result=($premier+$deuxieme);
                  echo $result;
             } elseif ($choix == "-") {
-                 $result=$first-$second;
+                 $result=($premier-$deuxieme);
                  echo $result;
             } elseif ($choix == "*") {
-                 $result=$first*$second;
+                 $result=($premier*$deuxieme);
                  echo $result;
             } elseif ($second == 0) {
                  echo "Vous ne pouvez pas diviser par 0";
             } elseif ($choix == "/"){
-                 $result=$first/$second;
+                 $result=($premier/$deuxieme);
                  echo $result;
             }
 
         if (isset($choix)){
-        echo("Resultat du calcul ".$first.$choix.$second." = ".$result);}
-        }
-    if(isset($reponse)):
-        echo $reponse;
-    endif;
+        echo("Resultat du calcul ".$premier.$choix.$deuxieme." = ".$result);
+    }
+}
+    
     ?>
     <hr>
     <?php
