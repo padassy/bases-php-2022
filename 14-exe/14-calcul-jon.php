@@ -1,19 +1,25 @@
 <?php
 
 if(isset($_POST['first'],$_POST['choix'],$_POST['second']) && is_numeric($_POST['first']) && is_numeric($_POST['second'])){
+
     $calcul1 = (float) $_POST['first'];
-    $calcul2 = (float)$_POST['second'];
-    if($_POST['choix']==='division' && $calcul2 == 0){
-        $reponse = "impossible de diviser par zéro!";
-    }
-    elseif($_POST['choix']==='addition'){
+    $calcul2 = (float) $_POST['second'];
+
+    
+    if($_POST['choix']==='addition'){
         $reponse = $calcul1+$calcul2;            
     }elseif($_POST['choix']==='soustraction'){
         $reponse = $calcul1-$calcul2;          
     }elseif($_POST['choix']==='multiplication'){
         $reponse = $calcul1*$calcul2;          
     }elseif($_POST['choix']==='division'){
-        $reponse = $calcul1/$calcul2;          
+        if($calcul2 == 0){
+            $reponse = "impossible de diviser par zéro!";
+        }else{
+            $reponse = $calcul1/$calcul2;
+        }       
+    }else{
+        $reponse = "Ne touche pas à mon formulaire ".$_SERVER['REMOTE_ADDR'];
     }
 }else{
     $reponse = "On a besoin de 2 valeurs numériques pour pouvoir les calculer";
