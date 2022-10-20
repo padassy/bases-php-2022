@@ -66,6 +66,6 @@ if($temp<=0):
     echo "Il gèle à {$temp}°";
 else:
     echo "L'eau est liquide à {$temp}°";
-endif;
+endif
 
 ?>
