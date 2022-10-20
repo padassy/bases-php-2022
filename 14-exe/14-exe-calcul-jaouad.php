@@ -80,6 +80,7 @@ Envoyez-moi le git pull request sur notre dépôt de la classe</p>
     if(isset($reponse)):
         echo $reponse;
     endif;
+    var_dump($GLOBALS);
     ?>
     </h3>
     <hr>
