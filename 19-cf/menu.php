@@ -9,6 +9,7 @@
                         <li class="nav-item"><a class="nav-link" href="?page=contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="?page=curriculum">CV</a></li>
                         <li class="nav-item"><a class="nav-link" href="?page=img">Galeries d'images</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><?=USER_SITE?></a></li>
                         <!--<li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">

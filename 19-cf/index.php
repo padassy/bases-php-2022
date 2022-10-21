@@ -1,5 +1,11 @@
 <?php
 
+/*
+
+CECI EST NOTRE CONTROLEUR FRONTAL
+
+*/
+
 // Appel des dépendances
 require_once "config.php";
 
