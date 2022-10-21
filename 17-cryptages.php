@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crypages</title>
+    <title>Crytpages</title>
 </head>
 <body>
-    <h1>Cryptage</h1>
+    <h1>Cryptages</h1>
     <h2>Les cryptages non inversables</h2>
     <h3>Ne jamais utiliser un site externe pour créer vous mots de passe !</h3>
     <form action="" method="post" name="pwd">
