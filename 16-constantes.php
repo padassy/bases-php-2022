@@ -24,3 +24,9 @@ echo "<br>".DB_HOST;
 var_dump(TABLEAU);
 
 echo "<br>".TABLEAU[0];
+?></p>
+<h4>const NOM_CONSTANTE = {valeur}</h4>
+<p>fonctionne de la même manière, vient de l'orienté objet (OO)<br>
+<?php
+const DB_PWD = "kjyzefkjherf5335dfgjklhf48ghtgDFG65è§3é";
+echo DB_PWD;
