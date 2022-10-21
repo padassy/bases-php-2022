@@ -10,6 +10,7 @@
     <h1>include</h1>
     <p>include() est une fonction qui va permettre d'importer n'importe quoi (en général un autre fichier PHP), autant de fois qu'on le souhaite, et sans erreur grave en cas d'échec</p>
     <?php
+    include "18-config.php";
     // appel le footer
     include "18-footer-1.php"; 
     // erreur
