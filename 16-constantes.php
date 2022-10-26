@@ -20,6 +20,9 @@ echo "<br>".DB_HOST;
 // erreur, affichage d'un tableau
 //echo "<br>".TABLEAU;
 //echo "<br>".TABLEAU;
+const LULU = 2;
+
+echo "<p>".LULU."</p>";
 
 var_dump(TABLEAU);
 

@@ -21,7 +21,7 @@
     echo "<br>$lulu";
     // erreur
     require_once "18-footer-2.php"; 
-    // malgré l'erreur, le code ne s'arrête pas, on ne recharge PAS le footer
+    // avec l'erreur on ne recharge PAS le footer
     //require_once "18-footer-1.php"; 
     echo "<h3>Je suis pas exécuté</h3>";
     ?>

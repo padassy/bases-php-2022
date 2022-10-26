@@ -7,8 +7,8 @@
     <title>Require</title>
 </head>
 <body>
-    <h1>require_</h1>
-    <p>require_once() est une fonction qui va permettre d'importer n'importe quoi (en général un autre fichier PHP), autant de x qu'on le souhaite,  !! Erreur grave et arrêt du script en cas d'échec</p>
+    <h1>require</h1>
+    <p>require() est une fonction qui va permettre d'importer n'importe quoi (en général un autre fichier PHP), autant de x qu'on le souhaite,  !! Erreur grave et arrêt du script en cas d'échec</p>
     <?php
     // appel le footer
     require "18-footer-1.php"; 
@@ -21,8 +21,8 @@
     echo "<br>$lulu";
     // erreur
     require "18-footer-2.php"; 
-    // malgré l'erreur, le code ne s'arrête pas, on ne recharge PAS le footer
-    //require_once "18-footer-1.php"; 
+    // avec l'erreur, le code s'arrête, on ne recharge PAS le footer
+    //require "18-footer-1.php"; 
     echo "<h3>Je suis pas exécuté</h3>";
     ?>
 </body>

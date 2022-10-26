@@ -6,8 +6,16 @@ CECI EST NOTRE CONTROLEUR FRONTAL
 
 */
 
-// Appel des dépendances
+/*
+DEPENDANCES
+*/
+
+// Appel des dépendances - ici config.php contient des constantes "vitales", on ne peut afficher le site que si on arrive  à les charger (require) et on ne peut le charger qu'une fois (require_once) sinon on aura des erreurs de redéfinition de constantes.
 require_once "config.php";
+
+/*
+ROUTER
+*/
 
 // si il existe une variable get nommée page (on a cliqué sur un lien)
 if(isset($_GET['page'])){
@@ -27,7 +35,7 @@ if(isset($_GET['page'])){
             include_once "homepage.php";
     }
 
-// sinon    
+// sinonpas de $_GET['page'];    
 }else{
     // inclusion d'homepage une seule X
     include_once "homepage.php";
