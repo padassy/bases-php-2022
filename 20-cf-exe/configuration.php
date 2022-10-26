@@ -32,4 +32,6 @@ const CLASS_CF2M = [
     "Atouts jeunes",
     "Aventure digitale",
     "Digital designer",
+    "Web Developer FullStack",
+    "Technicien support PC et réseaux",
 ];
