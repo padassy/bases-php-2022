@@ -4,9 +4,13 @@
 
 ### Instructions
 
+Vous devez arriver à :
+
+https://webdev-cf2m.be/20-cf-exe/
+
 En partant du contrôleur frontal (index.php)
 
-Sur votre branche main, faites un pull upstream main
+Sur votre branche main, faites un pull upstream main, puis
 
 - Créez une branche exe20{prenom}, c'est celle-ci que vous enverrez sur votre origin
 - Enregistrez ce dossier complet sous le nom 20-{votre prénom}-cf-exe
