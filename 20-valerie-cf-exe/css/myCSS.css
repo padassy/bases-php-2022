@@ -4,6 +4,7 @@ html{
 }
 body{
   flex-grow: 1;
+  display: flex;
 }
 .nav {
     background-color: rgb(212, 239, 242); 
