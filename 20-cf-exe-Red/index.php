@@ -29,5 +29,5 @@ else{
     // inclusion d'homepage une seule X
     include_once "pages/homepage.php";
 }
-
+include "pages/footer.php";
 ?>
