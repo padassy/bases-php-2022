@@ -17,24 +17,15 @@
     </ul>
     <container>
         <h2>Liste des Classes du CF2m</h2>
-        <ul>
-            <li>Animateur multimédia</li>
-        </ul>
-                <ul>
-            <li>Atouts jeunes</li>
-        </ul>
-                <ul>
-            <li>Aventure digitale</li>
-        </ul>
-                <ul>
-            <li>Digital designer</li>
-        </ul>
-                <ul>
-            <li>Web Developer FullStack</li>
-        </ul>
-                <ul>
-            <li>Technicien support PC et réseaux</li>
-        </ul>
+        <?php
+        foreach(CLASS_CF2M as $item):
+            ?>
+            <ul>
+                <li><?=$item?></li>
+            </ul>
+            <?php
+            endforeach;
+            ?>
     </container>
 </body>
 </html>
