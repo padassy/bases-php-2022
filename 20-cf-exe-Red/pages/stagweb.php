@@ -17,78 +17,16 @@
     </ul>
     <container>
         <h2>Liste Stagiaires WEB</h2>
-        <ul>
-            <li>Bik</li>
-            <li>Tom</li>
-        </ul>
-                <ul>
-            <li>Bugara</li>
-            <li>Jennifer</li>
-        </ul>
-                <ul>
-            <li>Dassy</li>
-            <li>Pierre-Alain</li>
-        </ul>
-                <ul>
-            <li>El Berkani</li>
-            <li>Jaouad</li>
-        </ul>
-                <ul>
-            <li>Gustin</li>
-            <li>Melvin</li>
-        </ul>
-                <ul>
-            <li>Haddad M Saouri</li>
-            <li>Redouan</li>
-        </ul>
-                <ul>
-            <li>Jaymes</li>
-            <li>Florence</li>
-        </ul>
-                <ul>
-            <li>Karkouch</li>
-            <li>Youssef</li>
-        </ul>
-                <ul>
-            <li>Lemfadli</li>
-            <li>Yanis</li>
-        </ul>
-                <ul>
-            <li>Rauzy</li>
-            <li>Jonathan</li>
-        </ul>
-                <ul>
-            <li>Sall</li>
-            <li>Magib</li>
-        </ul>
-                <ul>
-            <li>Sira</li>
-            <li>Coralie</li>
-        </ul>
-                <ul>
-            <li>Sokol</li>
-            <li>Maksym</li>
-        </ul>
-                <ul>
-            <li>Tabonkeng</li>
-            <li>Billy</li>
-        </ul>
-                <ul>
-            <li>Tîrdea</li>
-            <li>Ana-Maria</li>
-        </ul>
-                <ul>
-            <li>Van Huffle</li>
-            <li>Valérie</li>
-        </ul>
-                <ul>
-            <li>Vermeulen</li>
-            <li>Frédéric</li>
-        </ul>
-                <ul>
-            <li>Wamba</li>
-            <li>Cyrille Robbins</li>
-        </ul>
-    </container>
+        <?php
+        foreach(STAGIAIRES_WEB as $item):
+            ?>
+            <ul>
+            <li><?=$item[0]?></li>
+            <li><?=$item[1]?></li>
+            </ul>
+            <?php
+            endforeach;
+            ?>
+            </container>
 </body>
 </html>
