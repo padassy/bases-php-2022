@@ -1,3 +1,10 @@
+html{
+  min-height: 100%;
+  display: flex;
+}
+body{
+  flex-grow: 1;
+}
 .nav {
     background-color: rgb(212, 239, 242); 
     list-style-type: none;
@@ -11,3 +18,16 @@
     font-size: 20px;
     padding: 20px;
   }
+
+container h2{
+  text-align: center;
+}
+
+footer{
+    width: -moz-available;
+    text-align: center;
+    background-color: rgb(212, 239, 242);
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+}

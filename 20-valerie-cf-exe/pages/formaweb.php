@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="css/myCSS.css">
 </head>
 <body>
-    <h1>Formateurs WEB</h1>
-    <ul class="nav">
-        <li><a href="./">Accueil 20</a>
-        <li><a href="?u=formateurs">Formateurs WEB</a></li>
-        <li><a href="?u=stagiaires">Stagiaires WEB</a></li>
-        <li><a href="?u=classes">Classes CF2m</a></li>
-    </ul>
+    
     <container>
         <h2>Liste des formateurs WEB</h2>
         <?php
