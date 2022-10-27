@@ -15,7 +15,7 @@
         foreach(FORMATEURS_WEB AS $item):
         ?>
         <ul>   
-        <li><?=$item[0]?>  <?=$item[1]?> </li>
+        <li><?=$item[0]?>  <?=$item[1]?> , <?=$item[2]?></li>
         </ul>
         <?php
         endforeach;
