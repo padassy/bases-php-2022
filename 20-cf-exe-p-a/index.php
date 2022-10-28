@@ -20,5 +20,4 @@ if (isset($_GET['u'])){
 else {
     include_once "./pages/homepage.php";
 }
-include "pages/footer.php";
 ?>
