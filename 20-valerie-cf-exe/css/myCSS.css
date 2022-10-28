@@ -25,7 +25,6 @@ container h2{
 }
 
 footer{
-    width: -moz-available;
     text-align: center;
     background-color: rgb(212, 239, 242);
     list-style-type: none;
