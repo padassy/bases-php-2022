@@ -1,6 +1,6 @@
 <?php
 require_once "configuration.php";
-
+include 'pages/menu.php';
 
 if(isset($_GET['u'])){
 
@@ -20,4 +20,6 @@ if(isset($_GET['u'])){
 }else{
     include_once 'pages/homepage.php';
 };
+include 'pages/footer.php';
+
 ?>
