@@ -29,4 +29,7 @@
         ?>
     </container>
 </body>
+<?php
+include "pages/footer.php";
+?>
 </html>

@@ -34,4 +34,7 @@
         <h4>Bon travail</h4>
     </container>
 </body>
+<?php
+include "pages/footer.php";
+?>
 </html>
