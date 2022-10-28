@@ -1,11 +1,4 @@
-html{
-  min-height: 100%;
-  display: flex;
-}
-body{
-  flex-grow: 1;
-  display: flex;
-}
+
 .nav {
     background-color: rgb(212, 239, 242); 
     list-style-type: none;
@@ -20,14 +13,21 @@ body{
     padding: 20px;
   }
 
-container h2{
+footer{
+  padding: 1em;
   text-align: center;
+  background-color: rgb(212, 239, 242);
 }
 
-footer{
-    text-align: center;
-    background-color: rgb(212, 239, 242);
-    list-style-type: none;
-    margin: 0;
-    padding: 1em;
+/*
+html {
+  
+   min-height: 100%;
+   display: flex;
 }
+body{
+  margin:0;
+  padding:0;  
+  flex-grow: 1;
+  display:flex;
+  }*/

@@ -2,7 +2,7 @@
 
 require_once "configuration.php";
 
-include "./pages/menu.php";
+
 
 if(isset($_GET["u"])){
     

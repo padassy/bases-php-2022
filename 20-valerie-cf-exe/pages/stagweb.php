@@ -9,7 +9,7 @@
 </head>
 <body>
    
-    
+    <?php include "menu.php";?>     
     <container>
         <h2>Liste Stagiaires WEB</h2>
         <?php

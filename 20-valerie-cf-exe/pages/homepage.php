@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/myCSS.css">
 </head>
 <body>
+    <?php include "menu.php";?> 
     <container>
         <h2>Exercice 20</h2>
         <h3>Instructions</h3>

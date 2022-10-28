@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/myCSS.css">
 </head>
 <body>
-    
+    <?php include "menu.php";?> 
     <container>
         <h2>Liste des formateurs WEB</h2>
         <?php
