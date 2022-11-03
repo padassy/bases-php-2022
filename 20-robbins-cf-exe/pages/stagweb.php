@@ -16,8 +16,7 @@
         foreach(STAGIAIRES_WEB AS $item):
         ?>
         <ul>
-            <li><?=$item[0]?></li>
-            <li><?=$item[1]?></li>
+            <li><?=$item[0]?>  <?=$item[1]?></li>
         </ul>
         <?php
         endforeach;
