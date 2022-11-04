@@ -1,5 +1,7 @@
 <?php
-include "22-functions.php";
+include "22-functions-p-a.php";
+if(isset($_POST['num1']) & isset($_POST['choix']) & isset($_POST['num2'])){
+$result = calculBasic( $_POST['num1'],$_POST['choix'],$_POST['num2']);}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,12 +18,9 @@ include "22-functions.php";
     <p>Exercice - enregistrez ce fichier sous 22-appel-{prenom}.php mettez ici un formulaire à 2 entrées et un select avec + - * /</p>
     <p>Lorsqu'on clique sur envoyer, le formulaire est envoyé par POST, et le résultat s'affiche en dessous</p>
 
-    <form name="formulaire" method="post">
-    <?php
-    include "22-functions-p-a.php"
-    ?>
-            <p>nombre1:<input name="nombre1"></p>
-            <p>nombre2:<input name="nombre2"></p>
+    <form name="formulaire" method="post" action="">
+            <p>nombre1:<input name="num1"></p>
+            <p>nombre2:<input name="num2"></p>
  
     <select name="choix">
         <option value="+">+</option>
@@ -33,5 +32,10 @@ include "22-functions.php";
         <input type="submit" value="calculer">
 
     </form>
+    <?php
+    if (isset ($result))
+    echo "$result";
+    
+    ?>
 </body>
 </html>
