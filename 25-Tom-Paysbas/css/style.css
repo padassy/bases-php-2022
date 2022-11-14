@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: cadetblue;
+    background-color: bisque;
+    font-size: 30px;
+    
+}
+
+#navbar {
+    background-color: bisque;
+    padding-left: 20px;
+    padding-right: 20px;
+}
