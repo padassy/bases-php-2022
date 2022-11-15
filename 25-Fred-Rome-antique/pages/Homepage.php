@@ -13,7 +13,5 @@
     ?>
     <h1> <span>La</span><span>Rome</span><span>Antique</span> </h1>
 
-    <p> </p>
-    
 </body>
-</html>
+</html> 
