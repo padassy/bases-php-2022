@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art et Culture</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>La Rome antique dans l'art et la culture</title>
 </head>
 <body>
     <?php
