@@ -4,14 +4,20 @@
 
 body{
     background-color: RGB(35, 35, 35);
+    margin: 0px;
+}
+.mainpaintimg{
+    width: 100%;
+    height: auto;
 }
 
 nav{
     position: fixed;
     overflow: hidden;
-    width: 800px;
-    opacity: 0.9;
-    top: 5px;
+    width: 100%;
+    background-color: RGBA(35, 35, 35,.9);
+    margin: 0px;
+    z-index: 100;
 }
 
 ul{
@@ -30,7 +36,7 @@ a{
 }
 
 header li{
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
     float: left;
     font-size: 1.2em;
 
@@ -59,11 +65,103 @@ header li a:hover{
 }
 
 h1{
-    font-family: 'Italianno', cursive;
-    font-size: 150px;
-    color: wheat;
+    position: absolute;
+    font-family: 'Italianno';
     text-align: center;
+    font-size: 200px;
+    color: white;
+
 }
+
+.pt1{
+    position: relative;
+    top: -880px;
+    left: 220px;
+    color: white;
+
+}
+
+.pt2{
+    position: relative;
+    top: -790px;
+    left: 300px;
+    color: white;
+
+}
+
+.pt3{
+    position: relative;
+    top: -600px;
+    left: 300px;
+    color: wheat;
+
+}
+
+.carte{
+    position: relative;
+    top: 240px;
+    left: 1200px;
+    width: 550px;
+    height: auto;
+    border-radius: 30px;
+
+}
+
+.ptittxt{
+    position: relative;
+    top: 260px;
+    left: 670px;
+    color: white;
+    font-size: 15px;
+}
+
+.txtrome1{
+    font-family: 'Luxurious Roman', cursive;
+    position: relative;
+    top: -60px;
+    left: 100px;
+    font-size: 31px;
+    width: 820px;
+    height: auto;
+    text-align: justify;
+}
+
 p{
     color: white;
+}
+
+.royauté{
+    width: 100%;
+    height: auto;
+}
+
+.titre2{
+    position: relative;
+    top: -800px;
+    font-size: 230px;
+}
+
+.deco{
+    position: absolute;
+    width: 500px;
+    top: 1000px;
+    left: 37%;
+    margin: 0 auto;
+}
+
+.txtrome2{
+    font-family: 'Luxurious Roman', cursive;
+    position: relative;
+    left: 20%;
+    font-size: 31px;
+    width: 1200px;
+    height: auto;
+    text-align: justify;
+}
+
+.titre3{
+    position: absolute;
+    left: 250px;
+    top: 200px;
+
 }

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>La Rome antique dans l'art et la culture</title>
+    <title>La Rome Antique Dans L'Art Et La Culture</title>
 </head>
 <body>
     <?php
     include "menu.php"
     ?>
-    <h1>La Rome antique dans l'art et la culture</h1>
+    <h1>La Rome Antique Dans L'Art Et La Culture</h1>
     
 </body>
 </html>

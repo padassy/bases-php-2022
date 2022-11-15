@@ -1,15 +1,13 @@
 <header> 
-    <div class="navbar">
     <nav>
         <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="index.php?p=Roy">Royale</a></li>
-            <li><a href="index.php?p=Rep">Republique</a></li>
-            <li><a href="index.php?p=Emp">Empire</a></li>
-            <li><a href="index.php?p=Med">Medieval</a></li>
-            <li><a href="index.php?p=Art-Cult">Art et Culture</a></li>
+            <li><a href="index.php">Rome Antique</a></li>
+            <li><a href="index.php?p=Roy">Rome Royale</a></li>
+            <li><a href="index.php?p=Rep">République Romaine</a></li>
+            <li><a href="index.php?p=Emp">Empire Romain</a></li>
+            <li><a href="index.php?p=Med">Rome Medieval</a></li>
+            <li><a href="index.php?p=Art-Cult">Art et Culture Romaine</a></li>
             <!--<li><a href=""></a></li> -->
         </ul>
     </nav>
-    </div>
 </header>
