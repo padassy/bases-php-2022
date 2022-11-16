@@ -11,7 +11,7 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container">
+<div class="container2">
     <h2>Embraer 190</h2>
     <img src="./img/embraer.jpg" alt="">
 <p>

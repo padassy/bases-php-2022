@@ -13,7 +13,19 @@ include './pg/menu.php';
 ?>
 <div class="container">
     <h2>Bienvenue sur mon site , avec pour thème les Avions</h2>
-    <img src="./img/home.jpg" alt="">
+    <table>
+    <tr>
+        <td><img src="./img/airbus.jpg" alt=""></td>
+        <td><img src="./img/ATR.jpg" alt=""></td>
+        <td><img src="./img/embraer.jpg" alt=""></td>
+        <td><img src="./img/x-2.jpg" alt=""></td>
+        <td><img src="./img/lockhead.jpg" alt=""></td>
+        <td><img src="./img/Sukhoi.jpg" alt=""></td>
+        <td><img src="./img/valkyrie.jpg" alt=""></td>
+        <td><img src="./img/first.jpg" alt=""></td>
+    </tr>
+
+    </table>
 <p>
 Un avion1 est un aérodyne (un aéronef plus lourd que l'air), entraîné par un propulseurN 1, dont la portance aérodynamique est obtenue par des surfaces fixes. Lorsque la portance est obtenue (à l'arrêt ou en mouvement) par des surfaces en rotation, l'appareil est alors dit à « voilure tournante » (hélicoptère, autogire, girodyne).
 

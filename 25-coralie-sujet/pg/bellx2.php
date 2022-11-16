@@ -11,7 +11,7 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container">
+<div class="container2">
     <h2>BELL-X2</h2>
     <img src="./img/x-2.jpg" alt="">
 <p>

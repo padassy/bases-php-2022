@@ -11,7 +11,7 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container">
+<div class="container2">
     <h2>Bienvenue sur mon site , avec pour thème les Avions</h2>
     <img src="./img/home.jpg" alt="">
 <p>Sofia est la capitale et la plus grande ville de la Bulgarie, à 590 mètres d'altitude au pied du mont Vitocha, non loin de l'Iskar.
