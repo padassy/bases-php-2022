@@ -7,7 +7,11 @@
     <title>TDAH</title>
 </head>
 <body>
-<header><?php include 'incl-nav.php'?></header>
+<header>
+        
+        <h1>Les maladies mentales</h1>
+        <?php include 'incl-nav.php'?>
+         </header>
     <main>
         <h1>Le troubles de l'attention et hyperactivités</h1>
         <h2>Définition</h2>

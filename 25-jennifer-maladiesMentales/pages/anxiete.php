@@ -8,8 +8,9 @@
 </head>
 <body>
 <header>
-<?php include 'incl-nav.php'?>
-</header>
+        <h1>Les maladies mentales</h1>
+        <?php include 'incl-nav.php'?>
+         </header>
     <main>
         <h1>Les troubles de l'anxiétés</h1>
         <h2>Définition</h2>

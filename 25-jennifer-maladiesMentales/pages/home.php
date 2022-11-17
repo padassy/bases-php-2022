@@ -7,9 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>home</title>
 </head>
+
 <body> 
-    <?php include 'incl-nav.php'?>
-    <h1>maladies mentales</h1>
-    <p>Les malades mentaux ne savent pas qu'ils sont malades. Néanmoins, ils peuvent reconnaître l'histoire de leurs maladies.</p>
+    <header>
+        
+   <h1>Les maladies mentales</h1>
+   <?php include 'incl-nav.php'?>
+    </header>
+    <h2>Les malades mentaux ne savent pas qu'ils sont malades. Néanmoins, ils peuvent reconnaître l'histoire de leurs maladies.</h2>
 </body>
 </html>

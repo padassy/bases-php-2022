@@ -7,7 +7,11 @@
     <title>schizo</title>
 </head>
 <body>
-    <header><?php include 'incl-nav.php'?></header>
+<header>
+        
+        <h1>Les maladies mentales</h1>
+        <?php include 'incl-nav.php'?>
+         </header>
     <main>
 <h1>La schizophrénie</h1>
 <h2>Définition</h2>

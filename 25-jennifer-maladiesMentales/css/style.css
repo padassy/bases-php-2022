@@ -2,14 +2,14 @@
 html{
 
 
-
+width: 1375px;
     margin: 0 auto;
 
     font-family: Arial, Helvetica, sans-serif;  
 
 }
 main {
-    width: 1280px;
+    width: 1375px;
     background-color: lightgrey;
 }
 p {
@@ -20,7 +20,7 @@ p {
     margin-right: 30px;
 }
 h2 {
-    color:white ;
+    color:black;
     border-radius: 10px;
     text-align: center;
     clear: left;
@@ -33,7 +33,6 @@ h2 {
 h1 {
     background-color: beige ;
     opacity: 75%;
-   
     border:none;
     text-align: center;
     margin: auto;
@@ -41,19 +40,14 @@ h1 {
     height:80px;
     line-height: 80px;
     position: relative;
-    
- 
 }
 nav ul {
     list-style: none;
     padding-left: 0;
-  
     position: sticky;
     border: 2px solid black;
     border-radius: 10px;
     background-color: #CCC;
-   
-    
     margin-top: 10px;
     margin-bottom: 10px;
     height: 50px;
@@ -62,23 +56,24 @@ nav ul {
 }
 
 nav ul li {
-   
-   float:left ;
+    padding: 0 10px;
+    display: inline-block;
+   margin: auto;
     text-align: center;         
-    height:40px;
-    line-height: 40px;   
+    height:50px;
+    line-height: 50px;   
 }
 
 nav ul li a {
-    
+
     text-decoration: none;
-    display: block;         
+    display: inline block;         
     color: black;
     font-weight:bold;
 }
 header {
    
-    height: 495px;
+    
 display: block;
     border-radius: 10px;
 }
