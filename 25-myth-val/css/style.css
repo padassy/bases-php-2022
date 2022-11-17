@@ -28,6 +28,7 @@ nav {
     border: 2px solid black;
     border-radius: 10px;
     background-color:#CCC;
+    padding-bottom: 2em;
 }
 nav ul{
     list-style: none;
@@ -52,10 +53,10 @@ nav ul li a:hover{
 }
 
 
-
 /*corps texte*/
 
 body{
+    margin-top: 2em;
     width: 1280px;
     text-align: center;
     font-weight: 24px;
@@ -86,5 +87,3 @@ main{
 #liste:hover{
     color: black;
 }
-
-
