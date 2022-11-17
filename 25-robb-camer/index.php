@@ -1,9 +1,6 @@
 <?php
 
 
-include "menu.php"; 
-
-
 if(isset($_GET['pg'])){
   
       switch($_GET['pg']){

@@ -12,7 +12,7 @@
 
 <body>
   
-
+<?php include "menu.php"; ?>
         <header>
         <img   src="images/douala.jpg" alt="douala" width=auto; >
             <h1 class="titre-de-page">Bienvenue au <strong>Cameroun</strong></h1>
