@@ -12,7 +12,6 @@
 </head>
 <body>
 <h1>Erreur 404</h1>
-<?php include "incl/menu.php"; ?>
 <h2>Cette page n'existe plus!</h2>
     
 </body>
