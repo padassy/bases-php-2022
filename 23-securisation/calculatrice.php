@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homepage</title>
+    <title>Calculatrice</title>
 </head>
 <body>
-    <h1>homepage</h1>
+    <h1>Calculatrice</h1>
     <nav>
     <a href="./">Accueil</a> <a href="?page=calculatrice">calculatrice</a> <a href="?page=contact">Contact</a>
     </nav>
