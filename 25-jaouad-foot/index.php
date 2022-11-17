@@ -27,7 +27,8 @@ if(isset($_GET['p'])){
                                     case "coupe":
                                         include "pages/coupe.php";
                                         break;
-                                   
+                        default:
+                        include "pages/homepage.php";
                                
     }
 
