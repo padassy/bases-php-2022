@@ -231,8 +231,9 @@ p{
 .txtrome4{
     font-family: 'Luxurious Roman', cursive;
     position: relative;
+    top: -50px;
     left: 500px;
-    font-size: 28px;
+    font-size: 25px;
     width: 950px;
     height: auto;
     text-align: justify;
