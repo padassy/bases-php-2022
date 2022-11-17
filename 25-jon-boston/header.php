@@ -9,5 +9,5 @@
         <a href="?pg=irlande">Irlande</a>
         <a href="?pg=alcool">Alcool</a>
         <a href="?pg=cailloux">Cailloux</a>
-        <a href="?pg=lamer">La mer</a>
+        <a href="?pg=contact">Contact</a>
     </div>

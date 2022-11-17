@@ -23,8 +23,8 @@ if(isset($_GET['pg'])){
         case 'cailloux':
             include 'pg/cailloux.php';
             break;
-        case 'lamer':
-            include 'pg/lamer.php';
+        case 'contact':
+            include 'pg/contact.php';
             break;
         default :
             include 'pg/404.php';
