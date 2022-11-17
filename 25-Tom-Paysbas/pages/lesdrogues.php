@@ -8,9 +8,9 @@
     <title>Drogue</title>
 </head>
 <body>
-    <h1>La drogue au Pays Bas:</h1>
     <?php
     include "incl/menu.php";
     ?>
+    <h1>La drogue au Pays Bas:</h1>
 </body>
 </html>

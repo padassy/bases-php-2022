@@ -8,8 +8,8 @@
     <title>Galerie</title>
 </head>
 <body>
-    <h1>Galerie d'image</h1>
     <?php include "incl/menu.php"; ?>
+    <h1>Galerie d'image</h1>
     <img src="img/voyage-groupe-pays-bas-2.jpg" alt="">
 </body>
 </html>

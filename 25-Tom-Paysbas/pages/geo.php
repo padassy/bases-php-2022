@@ -8,9 +8,9 @@
     <title>Geographie</title>
 </head>
 <body>
-    <h1>Géographie </h1>
     <?php
     include "incl/menu.php";
     ?>
+    <h1>Géographie </h1>
 </body>
 </html>
