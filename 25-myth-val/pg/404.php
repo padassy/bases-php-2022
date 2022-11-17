@@ -13,9 +13,9 @@
 <body>
 
 <?php include 'include/inc.header.php'?>
-    <?php include 'include/inc.menu.php'?>
-    
-    <p>heu?...</p>
+  
+    <p class="error">Heu?... page not found?  error 404? </p>
+    <p class="error">Sorry les gens</p>
 
     <?php include 'include/inc.footer.php'?>
 

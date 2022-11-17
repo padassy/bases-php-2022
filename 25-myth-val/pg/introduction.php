@@ -13,7 +13,7 @@
 <body>
 
     <?php include 'include/inc.header.php'?>
-    <?php include 'include/inc.menu.php'?>
+    
     
     <main>
  
@@ -25,7 +25,7 @@
             <br>- Étude des mythes.
             <br>- Ensemble de mythes.</p>
 
-            <p>&copy Le Robert: <a href="​​​https://dictionnaire.lerobert.com/definition/mythologie">mythologie</a></p>
+            <p>&copy Le Robert: <a href="https://dictionnaire.lerobert.com/definition/mythologie" target="_blank">mythologie</a></p>
 
         <h2>Qu'est-ce que la mythologie?</h2>
             <p>La mythologie (du grec μυθολογία / muthología, de μῦθος / mûthos, « parole », et λόγος / lógos, « discours ») est soit un ensemble de mythes liés à une civilisation, une religion ou un thème particulier, soit l'étude de ces mythes. Les chercheurs qui étudient les mythologies sont appelés « mythologues ».<br>
