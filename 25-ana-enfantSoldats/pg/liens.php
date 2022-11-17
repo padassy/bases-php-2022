@@ -9,7 +9,10 @@
     <title>Liens</title>
 </head>
 <body>
-
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
     <h2>Liens</h2>
@@ -26,6 +29,9 @@
 
 </main>
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

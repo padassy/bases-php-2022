@@ -9,8 +9,10 @@
     <title>Causes</title>
 </head>
 <body>
-    <header>
-</header>
+    <?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
     <h2>Causes et raisons </h2>
@@ -65,6 +67,9 @@ trouver une occupation, qui bien souvent se doit d'être lucrative. L'engagement
 <p>Tous ces facteurs font que lors d'un conflit armé, les enfants sont, avec les femmes, des cibles faciles.</p>
 </main>
 <footer>
+    <?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

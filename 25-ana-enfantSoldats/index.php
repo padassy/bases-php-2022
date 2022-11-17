@@ -1,7 +1,4 @@
 <?php
-include "menu.php"; 
-include "header.php"; 
-
 
 if(isset($_GET['pg'])){
     
@@ -42,6 +39,6 @@ if(isset($_GET['pg'])){
 }
 
 
-include "footer.php"; 
+
 
 ?>

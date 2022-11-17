@@ -9,8 +9,10 @@
     <title>Galerie</title>
 </head>
 <body>
-    <header>
-</header>
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
     <h2>Galerie</h2>
@@ -26,6 +28,9 @@
 
 </main>
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

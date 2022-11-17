@@ -9,8 +9,10 @@
     <title>Conflicts</title>
 </head>
 <body>
-    <header>
-</header>
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 
 <main>
@@ -88,6 +90,9 @@
 </main>
 
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

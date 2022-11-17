@@ -9,8 +9,10 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-</header>
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
     <h2>Accueil</h2>
@@ -52,6 +54,9 @@ Les enfants-kamikazes sont également de plus en plus nombreux dans de nombreux 
 
 </main>
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

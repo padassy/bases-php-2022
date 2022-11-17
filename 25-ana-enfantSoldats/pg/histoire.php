@@ -9,8 +9,10 @@
     <title>Histoire</title>
 </head>
 <body>
-    <header>
-</header>
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
 <h2>Histoire</h2>
@@ -120,6 +122,9 @@ du 14 décembre 2007, la présence de centaines d’enfants soldats, filles et g
 
 </main>
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>

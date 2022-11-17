@@ -9,8 +9,10 @@
     <title>Droit</title>
 </head>
 <body>
-    <header>
-</header>
+<?php
+include "header.php"; 
+include "menu.php"; 
+    ?>
 
 <main>
     <h2>La Convention Internationale des Droits de L'Enfant (CIDE) </h2>
@@ -125,6 +127,9 @@ sanitaire de la COVID-19 a renforcé les réalités déjà difficiles pour les e
         
 </main>
 <footer>
+<?php
+include "footer.php"; 
+    ?>
 </footer>
 </body>
 </html>
