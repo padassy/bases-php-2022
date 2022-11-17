@@ -3,7 +3,12 @@
 // valeurs dans des constantes
 
 // tableau contenant toutes les pages acceptées pour le router avec la variable $_GET['page']
-const NOM_DE_PAGES = ["homepage","calculatrice","contact","404"];
+const NOM_DE_PAGES = ["homepage",
+                    "calculatrice",
+                    "contact",
+                    "404",
+                    "lulu",
+                ];
 
 const EMAIL_PROPRIO = "michaeljpitz@gmail.com";
 const RESULTATS_PG = 5;
