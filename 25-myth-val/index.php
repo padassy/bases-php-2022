@@ -1,6 +1,5 @@
 
 <?php
-
 if(isset($_GET['vue'])){
 
     switch ($_GET['vue']){
@@ -25,12 +24,11 @@ if(isset($_GET['vue'])){
         case 'merci':
             include "pg/merci.php";
             break;   
+            
         default:
             include_once "pg/404.php" ;
         }
     }else{
         include_once "pg/introduction.php";
     }
-
-
 ?>
