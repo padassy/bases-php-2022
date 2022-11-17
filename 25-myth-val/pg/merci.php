@@ -13,9 +13,9 @@
 <body>
 
 <?php include 'include/inc.header.php'?>
-    <?php include 'include/inc.menu.php'?>
+   
     
-    <p>merci wikipedia</p>
+    <p>Merci wikipedia, Topito et Google.</p>
 
     <?php include 'include/inc.footer.php'?>
 

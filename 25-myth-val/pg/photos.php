@@ -20,7 +20,7 @@
 </head>
 <body>
     <?php include 'include/inc.header.php'?>
- <?php include 'include/inc.menu.php'?>   
+ 
 
 <div class="container gallery-container">
 
