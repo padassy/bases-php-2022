@@ -9,7 +9,7 @@
     
    
     
-    <title>Quelques dieux connus</title>
+    <title>Quelques dieux assez improbables</title>
 </head>
 <body>
 
@@ -17,6 +17,9 @@
     <?php include 'include/inc.menu.php'?>
     
     <p>on se fait plaisir</p>
+
+
+    <p>Au delà des dieux très connus tel que Zeus, Odin ou Anubis, les peuples vouaient également un culte à des dieux mineurs, un peu plus spécialisés et parfois dans des domaines vraiment exotiques.</p>
 
     <?php include 'include/inc.footer.php'?>
 

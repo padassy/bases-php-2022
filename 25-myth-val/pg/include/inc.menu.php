@@ -9,5 +9,6 @@
             <li><a href="?vue=photos">Photos</a></li>
             <li><a href="?vue=actuellement">Nouvelles mythologies</a></li>
             <li><a href="?vue=merci">Et un gros Kiss à Wikipédia</a></li>
+            
     </ul>    
 </nav>
