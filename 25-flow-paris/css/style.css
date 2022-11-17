@@ -2,6 +2,9 @@
     width: 1000px;
     position: absolute;
     background-color: beige;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 3px black solid;
 }
 
 .logo {
@@ -18,7 +21,6 @@
 }
 
 .aside {
-    display:flex;
     width: 250px;
     vertical-align: top;
 }
@@ -32,12 +34,12 @@
 }
 
 .barnav {
+    width: 280px;
     display: flex;
 }
 
 .barnav ul {
     list-style-type: none;
-    padding: 3em;
 }
 
 .barnav ul a {
@@ -49,8 +51,6 @@
 }
 
 .article {
-    display: flex;
-    margin-left: 300px;
     position: relative;
     float: right;
     justify-content: space-between;
@@ -59,6 +59,3 @@
     margin-bottom: 200px;
 }
 
-.photo {
-    
-}
