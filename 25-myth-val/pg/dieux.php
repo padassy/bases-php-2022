@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-pages.css">
+   
     
     <title>Quelques dieux connus</title>
 </head>

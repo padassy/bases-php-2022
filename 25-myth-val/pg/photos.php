@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-pages.css">
+    
 
     <title>Gallery</title>
 
@@ -18,14 +19,13 @@
 
 </head>
 <body>
-<?php include 'include/inc.header.php'?>
-    <?php include 'include/inc.menu.php'?>
+    <?php include 'include/inc.header.php'?>
+    
 
 <div class="container gallery-container">
 
-    <h1>Gallery</h1>
-
-    <p class="page-description text-center">Photos Gallery</p>
+<?php include 'include/inc.menu.php'?>
+    <h2 class="page-description text-center">Photos Gallery</h2>
     
     <div class="tz-gallery">
 
