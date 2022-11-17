@@ -26,7 +26,7 @@
     ?>
     <div class="hist">
         <h1 class="titre">Bienvenue sur la page histoire </h1>
-        <img src="../img/hist-sen.jpg" alt="img">
+        <img src="img/hist-sen.jpg" alt="img">
 
         <p>Comme pour bien d'autres pays du continent africain, l'écriture de cette histoire se heurte à de multiples difficultés2, tant méthodologiques qu'idéologiques.</p>
 
