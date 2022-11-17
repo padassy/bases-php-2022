@@ -11,16 +11,24 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container2">
-    <h2>Bienvenue sur mon site , avec pour thème les Avions</h2>
+<div class="container1">
+    <h2>Le lockhead SR-71</h2>
     <img src="./img/lockhead.jpg" alt="">
-<p>Sofia est la capitale et la plus grande ville de la Bulgarie, à 590 mètres d'altitude au pied du mont Vitocha, non loin de l'Iskar.
+</div>
+<div class="container2">
+<p>
+Le Lockheed SR-71 Blackbird (Merle) était une version de l'avion-espion Lockheed A-12 Oxcart construite à au moins 32 exemplaires pour l'armée de l'air américaine, qui l'utilisa principalement de 1968 à 1990.
 
-Ses habitants, les Sofiotes (Sofiiantsi (софиянци) en bulgare), soit 17 % de la population du pays, plaçant Sofia au 13e rang des villes les plus peuplées de l'Union européenne2. Sofia est également la quatrième plus grande ville des Balkans, après Istanbul, Athènes et Belgrade. Elle est à la fois le centre politique et culturel du pays, son principal centre d'échanges ainsi que son premier centre industriel, avec des activités sidérurgiques, métallurgique, de construction mécanique et de chimie3. C'est également un centre universitaire depuis 1888.
-
-La ville occupe une position géostratégique très importante dans la région, ce qui a largement contribué à son expansion démographique.
+Également surnommé « Habu » (de Habu, nom d'un serpent noir venimeux demeurant sur certaines îles du Japon, notamment Okinawa, où un détachement d'appareils était basé), le SR-71 conservait la silhouette unique et les performances extraordinaires de l'A-12, mais s'en distinguait par des capteurs de reconnaissance spécifiques, et la présence d'un second membre d'équipage chargé de les mettre en œuvre.
 </p>
-	
+<em><h3>Les origines : la Guerre Froide</h3></em>
+<p>
+    En 1945, suite à l'abaissement du rideau de fer et l'instauration de la guerre froide entre l'Union soviétique et les États-Unis, ces derniers se rendirent compte qu'ils ne possédaient alors aucune donnée stratégique sur celle-ci, et notamment sur son potentiel militaire et industriel.</p>
+<p>
+De fait, et ce malgré l'opération Wringer, première opération de renseignement systématique sur l'URSS qui fut menée de 1945 à 1950 par le 7001th Air Intelligence Service, et qui consistait en un interrogatoire systématique de tous les prisonniers allemands rapatriés des camps soviétiques2, les États-Unis ne possédaient qu'une vision restreinte du potentiel de leur adversaire d'alors. De plus, la majorité des installations industrielles et militaires avaient été depuis déplacées vers l'Oural, à la suite de l'invasion allemande de 1941, lors de l'opération Barbarossa3, rendant du même coup leur localisation et tout bombardement ultérieur impossibles.</p>
+<p>
+C'est dans ce contexte de tension géopolitique permanente que fut développé le précurseur du SR-71, à savoir le Lockheed U-2. Son altitude de vol de 20 000 m le mettait hors de portée des missiles antiaériens soviétiques, tout en lui permettant de photographier les zones assignées par la CIA3. Cependant, la détection, dès 1956, de l'U-2 par les radars de la défense soviétique amena les États-Unis, dès le milieu des années 1950, à ouvrir d'autres pistes pour conserver leur avantage tactique.
+</p>
 
 </div>	
 

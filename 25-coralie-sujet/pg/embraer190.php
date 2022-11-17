@@ -11,13 +11,15 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container2">
+<div class="container1">
     <h2>Embraer 190</h2>
     <img src="./img/embraer.jpg" alt="">
+</div>
+<div class="container2">
 <p>
 L'Embraer 190 (E90) est un avion civil produit par l'entreprise brésilienne Embraer. Cette version allongée de l'Embraer 170 est certifiée depuis la mi-2005 et peut accueillir de 98 à 114 passagers. De mars 2004 à fin septembre 2007, 107 Embraer 190 sont mis en service.
 </p>
-    <h3>Liste des compagnies qui l'utilise</h3>
+  <em>  <h3>Liste des compagnies qui l'utilise</h3></em>
    
 <li>Aeroméxico, par sa filiale Aeroméxico Connect.</li>
 <li>Aero Republica Colombia.</li>

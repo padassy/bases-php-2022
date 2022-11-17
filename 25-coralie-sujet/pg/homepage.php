@@ -21,11 +21,13 @@ include './pg/menu.php';
         <td><img src="./img/x-2.jpg" alt=""></td>
         <td><img src="./img/lockhead.jpg" alt=""></td>
         <td><img src="./img/Sukhoi.jpg" alt=""></td>
-        <td><img src="./img/valkyrie.jpg" alt=""></td>
+        <td><img src="./img/val.jpg" alt=""></td>
         <td><img src="./img/first.jpg" alt=""></td>
     </tr>
-
+    </div>
     </table>
+   <em> <h3>Petite histoire</h3></em>
+    <div class="container2">
 <p>
 Un avion1 est un aérodyne (un aéronef plus lourd que l'air), entraîné par un propulseurN 1, dont la portance aérodynamique est obtenue par des surfaces fixes. Lorsque la portance est obtenue (à l'arrêt ou en mouvement) par des surfaces en rotation, l'appareil est alors dit à « voilure tournante » (hélicoptère, autogire, girodyne).
 
@@ -34,7 +36,7 @@ Un avion équipé d'un dispositif lui permettant de décoller et de se poser sur
 Celui qui le dirige est appelé pilote ou aviateur.
 </p>
 
-<h3>Petite histoire</h3>
+
 <p>Le mot <em> « aviation » </em> (du latin « avis », qui signifie « oiseau »2, et du suffixe « atio ») a été employé pour la première fois par Gabriel de La Landelle, en 1863, dans le livre Aviation ou navigation aérienne sans ballon, un ouvrage rendant compte des tentatives d'envol de Jean-Marie Le Bris dans un appareil plus lourd que l'air.</p>
 <br>
 <p>

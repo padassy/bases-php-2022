@@ -11,11 +11,11 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container2">
+<div class="container1">
     <h2>Voici l'AirBus A350</h2>
     <img src="./img/airbus.jpg" alt="">
 </div>
-<div class= "container">
+<div class= "container2">
 <p>
 L'Airbus A350 XWB est un avion de ligne long-courrier et gros porteur du constructeur européen Airbus. Initialement baptisé A350, ce modèle était dérivé de l'A330 ; toutefois, à la suite des remarques des compagnies aériennes, il a été décidé à la mi-juillet 2006 d'en revoir le concept et de le munir d'un fuselage plus large, à la fois par rapport aux A330 et A340, et surtout par rapport à son principal concurrent, à cette époque, le Boeing 7873. Cette évolution permet aujourd'hui à l'A350 de concurrencer aussi le nouveau Boeing 777X (dont le premier vol, initialement prévu le 13 mars 2019, a finalement eu lieu le 25 janvier 2020).<p>
 <p>

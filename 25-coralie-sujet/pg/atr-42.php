@@ -11,9 +11,11 @@
 <?php
 include './pg/menu.php';
 ?>
-<div class="container2">
+<div class="container1">
     <h2>Sur cette page vous allez pouvoir découvrir l'ATR-42</h2>
     <img src="./img/ATR.jpg" alt="">
+</div>
+<div class="container2">
 <p>
 L'ATR 42 est un avion de transport de passager à turbopropulseurs.
 </p>
@@ -27,6 +29,11 @@ Le Premier ministre Laurent Fabius devant le premier appareil, peu après son pr
 </p>
 <p>
 12 ATR 42 ont également été spécialement aménagés pour la surveillance des espaces maritimes par Alenia et livrés aux garde-côtes et à la douane italienne.
+</p>
+<p>
+À partir du modèle initial, -300, il a été produit en plusieurs versions successives dont une révision majeure, le modèle -500 à partir de 1995. Celui-ci est équipé de moteurs plus puissants (PW127E) et offre un bien meilleur confort aux passagers grâce à la réduction des vibrations (hélices à 6 pales, renfort du fuselage, absorbeurs).
+<br>
+Les structures secondaires de l’ATR 42 sont essentiellement réalisées en matériau composite. Les dérives en matériau composite ont fait leur apparition sur les ATR 42-500 pour alléger les appareils. Les matériaux composites représentent environ 20 % de la structure totale des ATR 42-500.
 </p>
 
 </div>	
