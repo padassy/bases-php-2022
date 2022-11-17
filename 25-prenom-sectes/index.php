@@ -1,42 +1,43 @@
 <?php
 
-$titre = "titre";
+$title = "Accueil";
 
 if (isset($_GET['u'])) {
 
     switch ($_GET['u']) {
         case 'hist': 
-            $titre = "Histoire"; 
+            $title = "Histoire"; 
             include 'pages/Histoire.php';
             break;
         case 'dif':
-            $titre = "Secte et Religion";
+            $title = "Secte et Religion";
             include "pages/secte-religion.php";
             break;
         case 'Krish':
-            $titre = "Krishna";
+            $title = "Krishna";
             include 'pages/krishma.php';
             break;
         case 'Morm':
-            $titre = "Mormons";
+            $title = "Mormons";
             include 'pages/mormons.php';
             break;
         case 'scien':
-            $titre = "Scientologue";
+            $title = "Scientologue";
             include 'pages/scientologue.php';
             break;
         case 'Tsoleil':
-            $titre = "temple du soleil";
+            $title = "temple du soleil";
             include 'pages/Lordre_du_temple_du_soleil.php';
             break;
          case 'form':
-            $titre = "Contact";
+            $title = "Contact";
             include 'pages/contact.php';
             break;
         default:
-            $titre = "error 404";
+            $title = "error 404";
             include_once 'pages/error-404.php';
     }
 } else {
+    $title = "Accueil";
     include_once 'pages/home-page.php';
 };
