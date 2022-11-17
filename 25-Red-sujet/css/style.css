@@ -13,6 +13,8 @@ nav{
     margin: 0 auto;
 }
 nav a{
+    font-weight: bold;
+    text-transform: uppercase;
     line-height: 35px;
     padding-left: 20px;
     padding-right: 20px;
@@ -42,6 +44,13 @@ main{
     margin: 0 auto;
     position: fixed;
     background-color: #111;
+}
+main p{
+    width: 1000px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0;
+    border:0;
 }
 p{
     margin: 0 auto;

@@ -1,5 +1,4 @@
-
-    <?php
+<?php
 
     if(isset($_GET['pg'])){
 
