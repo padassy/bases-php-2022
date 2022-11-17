@@ -15,7 +15,8 @@
 <?php include 'include/inc.header.php'?>
    
     
-    <p>Merci wikipedia, Topito et Google.</p>
+    <p id="merci" >Merci Wikipedia, Topito et Google pour les textes, Pexels, Pxhere et Google pour les images en licence Creative Commons .<p>
+        <br>
 
     <?php include 'include/inc.footer.php'?>
 

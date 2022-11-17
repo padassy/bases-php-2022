@@ -16,7 +16,7 @@
 <?php include 'include/inc.header.php'?>
    
     
-    <h2>Juste pour se faire plaisir</h2>
+    <h1>Juste pour se faire plaisir</h1>
 
 
     <p>Au delà des dieux très connus tel que Zeus, Odin ou Anubis, les peuples vouaient également un culte à des dieux mineurs un peu plus spécialisés et parfois dans des domaines vraiment... exotiques.</p>
