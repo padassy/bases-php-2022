@@ -12,15 +12,6 @@ if(isset($_GET['p'])){
         case 'Emp':
             include "pages/Empire.php";
                 break;
-        case 'Med':
-            include 'pages/Medieval.php';
-                break;
-        case 'Art-Cult':
-            include 'pages/Art-Culture.php';
-                break;
-        case '':
-            include '';
-                break;
         default:
             include_once 'pages/Homepage.php';
     }
