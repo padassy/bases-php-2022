@@ -68,6 +68,8 @@
     baguetteBox.run('.tz-gallery');
 </script>
 
+<hr>
+<br>
 <?php include 'include/inc.footer.php'?>
 
 </body>
