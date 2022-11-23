@@ -2,6 +2,9 @@
 // Nos paramètres de connexion
 require_once "config.php";
 
+// Nos fonctions
+require_once "functions.php";
+
 // Notre connexion    
 try {
     // connexion à la DB mysql "statistiques"
@@ -56,8 +59,12 @@ else:
     while($item = mysqli_fetch_assoc($query)):
 
         // affichage des pays par ordre alphabétique
+
+        // ici on voit que $item['population'] est un string, int est demandé comme attribut de perMillion, et pourtant ça fonctionne => transtypage activé
+        // echo gettype($item['population']);
+        
     ?>
-    <p><?=$item['nom']?> - <?=$item['population']?></p>
+    <p><?=$item['nom']?> - <?=perMillion($item['population'])?></p>
     <?php
     // fin de boucle
     endwhile;
