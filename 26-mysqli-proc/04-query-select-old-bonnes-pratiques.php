@@ -8,7 +8,7 @@ require_once "config.php";
     $db = @mysqli_connect(DB_HOST,DB_LOGIN,DB_PWD,DB_NAME,DB_PORT);
 
     // si erreur
-    if(mysqli_connect_error()){
+    if(mysqli_connect_errno()){
         die("Erreur numéro : ".mysqli_connect_errno()." Message : ".mysqli_connect_error());
     }
     // mettre le charset à la connexion
