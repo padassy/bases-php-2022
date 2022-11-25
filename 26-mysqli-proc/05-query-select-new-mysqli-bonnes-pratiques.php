@@ -43,7 +43,7 @@ if(empty($nb)){
     $affiche = "Pas encore de pays dans notre programme";
 
 }else{
-    // mettre les résultats dans une variable de type tableau pour faire un foreach dans la vue
+    // mettre les résultats dans une variable de type tableau indexé pour faire un foreach dans la vue, le MYSQLI_ASSOC est un flag (contante numérique) qui permet que les résultats soient des tableaux associatifs
     $datas = mysqli_fetch_all($query,MYSQLI_ASSOC);
 }
 
@@ -62,19 +62,28 @@ mysqli_close($db);
     <title>Accueil</title>
 </head>
 <body>
+    <?php
+// var_dump($datas);
+    ?>
     <h1>Accueil</h1>
     <h2>Nombre de pays : <?=$nb?></h2>
     <?php
+    // pas de pays
     if(isset($affiche)): 
     ?>
     <h3><?=$affiche?></h3>
     <?php
+    // sinon on a au moins un pays
     else:
+        // tant que l'on a des pays, on les mets ligne par ligne dans une variable nommée $fifa
         foreach($datas as $fifa):
+            // affichage des données
     ?>
     <p><strong><?=$fifa['nom']?></strong> <?=perMillion($fifa['population'])?> d' Habitants</p>
     <?php
+        // fin du for
         endforeach;
+    // fin du if
     endif;
     ?>
 </body>
