@@ -38,3 +38,4 @@ function perMillion(int $number): string {
     /* méthode 3 - 1 sur une ligne */
     $number=round($number/1000000,2); return ($number>=2)? "$number Millions": "$number Million";
 }
+;
