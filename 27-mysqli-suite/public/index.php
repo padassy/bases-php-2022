@@ -1,5 +1,11 @@
 <?php
 
+/*
+
+DEPENDANCES ET CONNEXION
+
+*/
+
 // importation des dépendances
 
 require_once "../config.php";
@@ -22,6 +28,53 @@ try{
 
 }
 
+
+/*
+
+TENTATIVE D INSERTION
+
+*/
+
+// si nos 2 variables POST sont présentes
+if(isset($_POST['titre'],$_POST['texte'])){
+
+    // récupération des variables globales utilisateurs en locales
+    $titre = $_POST['titre'];
+    $texte = $_POST['texte'];
+
+    // on supprime les tags html susceptibles de poser problèmes
+    $titre = strip_tags($titre);
+    $texte = strip_tags($texte,['br','p']);
+
+    // on retire les espaces avant et arrières
+    $titre = trim($titre);
+    $texte = trim($texte);
+
+    // on encode les caractères dangereux restants en entités html (ici ENT_QUOTES = ' et ")
+    $titre = htmlspecialchars($titre, ENT_QUOTES);
+    $texte = htmlspecialchars($texte, ENT_QUOTES);
+
+    // si, au final, aucun n'est vide
+    if(!empty($titre)&& !empty($texte)){
+        // on prépare la requête
+        $sql = "INSERT INTO `articles` (`titrearticles`, `textearticles`) VALUES ('$titre','$texte')";
+        // on exécute la requête
+        $query = mysqli_query($connectDB,$sql) or die("Erreur : ".mysqli_error($connectDB));
+    }
+
+    //var_dump($_POST,$titre,$texte);
+
+    
+
+}
+
+
+/*
+
+SELECTION DES ARTICLES
+
+*/
+
 // requête
 $sql ="SELECT * FROM `articles` ORDER BY `datearticles` DESC";
 
@@ -39,6 +92,12 @@ if(empty($nb)){
     // récupérer tous les articles dans un tableau indexé (chaque article est un tableau associatif -> MYSQLI_ASSOC)
     $datas = mysqli_fetch_all($query,MYSQLI_ASSOC);
 }
+
+/*
+
+VUE DES ARTICLES
+
+*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,12 +125,19 @@ if(empty($nb)){
         ?>
     <div class="article">
         <h4><?=$item['titrearticles']?></h4>
-        <p><?=$item['textearticles']?></p>
+        <p><?=html_entity_decode($item['textearticles'],ENT_QUOTES); // pour réencoder les p et br?></p>
         <p><?=$item['datearticles']?></p>
     </div>
     <?php
         endforeach;
     endif;
     ?>
+    <hr />
+    <h4>Ecrire un article</h4>
+    <form action="" method="POST" name="article">
+        <input type="text" name='titre' placeholder="Le titre" required /><br>
+        <textarea name='texte' placeholder="Votre texte" required></textarea><br>
+        <input type="submit" value="Envoyer"/>
+    </form>
 </body>
 </html>
