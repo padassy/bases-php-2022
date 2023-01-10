@@ -39,7 +39,9 @@ var_dump($resultat1);
 
 // création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant
 
-$sql2="SELECT * FROM `articles`";
+$sql2="SELECT a.*, u.user_login, u.idusers FROM `articles` a
+        INNER JOIN users u
+        ON u.idusers = a.users_idusers ";
 
 $query2 = mysqli_query($db,$sql2) or die('Erreur de $query2');
 
@@ -49,7 +51,9 @@ var_dump($resultat2);
 
 // création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant
 
-$sql3="SELECT * FROM `articles`";
+$sql3="SELECT a.idarticles, a.art_title, SUBSTR(a.art_text,1,250) AS art_text, a.art_date, u.user_login, u.idusers FROM `articles` a
+INNER JOIN users u
+ON u.idusers = a.users_idusers ";
 
 $query3 = mysqli_query($db,$sql3) or die('Erreur de $query3');
 
