@@ -24,7 +24,10 @@ try{
 // erreur ($e est une instance de la classe Exception qui contient l'exception)
 }catch(Exception $e){
     // affichage de l'erreur et arrêt du script
-    exit(utf8_encode($e->getMessage()));
+    // version avant PHP 8.2, est dépréciée car elle ne dit pas de quel format on part pour encoder en utf8, une nouvelle fonction est créée pour le français : iso8859_1_to_utf8($string); ! ne fonctionnera qu'à partir de PHP 8.2
+    // exit(utf8_encode($e->getMessage()));
+    // pour le moment on utilise une bibliothèque intégrée pour faire la même chose (conversion de ISO-8859-1 vers utf8)
+    exit(mb_convert_encoding($e->getMessage(),'UTF-8','ISO-8859-1'));
 }
 
 // exemple
