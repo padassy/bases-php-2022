@@ -31,89 +31,60 @@ try{
     exit(mb_convert_encoding($e->getMessage(),'UTF-8','ISO-8859-1'));
 }
 
-// exemple
+/*
 
-// création d'une variable de type string contenant du SQL (notre requête : 'sélectionne tout de la table articles')
-$sql1="SELECT * FROM `articles`";
+Router
 
-// création d'une variable contenant l'exécution de la requête (->objet), ou en cas d'erreur arrêt du script et affichage du texte
-$query1 = mysqli_query($db,$sql1) or die('Erreur de $query1');
 
-// var_dump($query1);
+ */
 
-// création d'une variable contenant un tableau indexé contenant lui-même les résultats sous forme de sous tableaux associatifs (MYSQLI_ASSOC)
-$resultat1 = mysqli_fetch_all($query1, MYSQLI_ASSOC);
+// si on est sur la page d'accueil
+// si il n'existe pas de variable get nommée section ou de variable get nommée article ou de variable get nommée auteur
+if(!isset($_GET['section']) || !isset($_GET['article']) || !isset($_GET['article'])){
 
-//var_dump($resultat1);
+    // requête qui récupère tous articles avec 255 caractères de texte avec l'auteur cliquable et les rubriques cliquables pour notre page d'accueil
 
-// création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant
+    $sql="SELECT a.idarticles, a.art_title, # selection de l'id de l'article et de son titre (a est l'alias de articles, voir près du FROM)
+    SUBSTR(a.art_text,1,250) AS art_text, # on coupe le texte de l'article pour n'en garder que 250 caractères (! 256 car décimal vers octal) et on crée un alias de sortie avec AS pour pouvoir gérer le tableau associatif dans un autre langage (PHP)
+    a.art_date,  # la date de l'article
+    u.user_login, u.idusers,  # Le login et mot de passe de l'auteur (u est l'alias de user voir près de INNER JOIN)
 
-$sql2="SELECT a.*, u.user_login AS login, u.idusers FROM `articles` a
-        INNER JOIN users u
-        ON u.idusers = a.users_idusers ";
+    /* En MySQL et MariaDB, lorsqu'on utilise un GROUP BY, on utilise GROUP_CONCAT pour concaténer les lignes de résultat en un seul sans perdre de données */
 
-$query2 = mysqli_query($db,$sql2) or die('Erreur de $query2');
+    GROUP_CONCAT(r.idrubriques) AS idrubriques, # on concatène les id, la virgule est le séparateur par défaut, on crée un alias de sortie
+    GROUP_CONCAT(r.rub_title SEPARATOR '|||') AS rub_title # on concatène les titre des sections, la virgule n'est plus un séparateur séucrisé, on met comme SEPARATOR les '|||' on crée un alias de sortie
+    FROM `articles` a # depuis la table article renommée en alias interne a
 
-$resultat2 = mysqli_fetch_all($query2, MYSQLI_ASSOC);
+        /* Jointure interne (voir https://raw.githubusercontent.com/WebDevCF2m2022/bases-php-2022/main/28-mysqli-crud/SQL_Joins.svg ) car il n'existe pas d'articles sans auteurs, et si c'était le cas (non innoDB OU possibilité de NULL pour la clef étrangère), le INNER JOIN (qui équivaut à JOIN) ne prendra pas les articles qui n'ont pas d'auteurs !
+        */
 
-var_dump($resultat2);
+        INNER JOIN users u # on joint de manière interne users (alias u) à articles 
+        ON u.idusers = a.users_idusers # condition de jointure 
 
-//echo json_encode($resultat2);
-
-// création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant
-
-$sql3="SELECT a.idarticles, a.art_title, SUBSTR(a.art_text,1,250) AS art_text, a.art_date, u.user_login, u.idusers FROM `articles` a
-INNER JOIN users u
-ON u.idusers = a.users_idusers ";
-
-$query3 = mysqli_query($db,$sql3) or die('Erreur de $query3');
-
-$resultat3 = mysqli_fetch_all($query3, MYSQLI_ASSOC);
-
-var_dump($resultat3);
-
-// création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant, et tous les champs de toutes les rubriques dans lesquelles se trouvent les articles (! si l'article ne se trouve dans aucune rubrique, on veut le voir quand même)
-
-$sql4="SELECT a.idarticles, a.art_title, 
-    SUBSTR(a.art_text,1,250) AS art_text, a.art_date, 
-    u.user_login, u.idusers, 
-    r.*
-    FROM `articles` a
-        INNER JOIN users u
-        ON u.idusers = a.users_idusers
-        LEFT JOIN articles_has_rubriques ahr 
-        ON ahr.articles_idarticles = a.idarticles
-        LEFT JOIN rubriques r 
-        ON ahr.rubriques_idrubriques = r.idrubriques
-        "
-        ;
-
-$query4 = mysqli_query($db,$sql4) or die('Erreur de $query4');
-
-$resultat4 = mysqli_fetch_all($query4, MYSQLI_ASSOC);
-
-var_dump($resultat4);
-
-// création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant, et l'id et le titre de toutes les rubriques dans lesquelles se trouvent les articles (! si l'article ne se trouve dans aucune rubrique, on veut le voir quand même -> LEFT JOIN) ! nous souhaitons n'avoir qu'un résultat, mais avec tous les champs récupérés
-
-$sql5="SELECT a.idarticles, a.art_title, 
-    SUBSTR(a.art_text,1,250) AS art_text, a.art_date, 
-    u.user_login, u.idusers, 
-    GROUP_CONCAT(r.idrubriques) AS idrubriques, 
-    GROUP_CONCAT(r.rub_title SEPARATOR '|||') AS rub_title
-    FROM `articles` a
-        INNER JOIN users u
-        ON u.idusers = a.users_idusers
-        LEFT JOIN articles_has_rubriques ahr 
-        ON ahr.articles_idarticles = a.idarticles
-        LEFT JOIN rubriques r 
-        ON ahr.rubriques_idrubriques = r.idrubriques
+        /* jointure externe (LEFT, dans l'ordre de lecture, par rapport à la table à gauche, juste après le FROM), prendra les articles, même si ils ne sont pas dans une rubrique
+        Comme nous sommes en présence de many to many, il faut d'abord prendre la table de jointure (qui ne contient que des clefs étrangères)
+        */
+        LEFT JOIN articles_has_rubriques ahr # on joint la table de jointure qu'on renome ahr
+        ON ahr.articles_idarticles = a.idarticles # condition de jointure entre la table article et celle de jointure
+        LEFT JOIN rubriques r # on joint la table voulue par le many to many en utilisant la table de jointure et la table rubriques (renommée r)
+        ON ahr.rubriques_idrubriques = r.idrubriques # condition de jointure entre la table jointure (ahr) et la table voulue (r)
+        WHERE a.idarticles = 5
+        /*
+        on groupe par l'index (clef primaire) de la table principale (FROM articles)
+        */
         GROUP BY a.idarticles
         "
         ;
 
-$query5 = mysqli_query($db,$sql5) or die('Erreur de $query5');
+        // exécution de la requête
+        $query = mysqli_query($db,$sql) or die('Erreur de $query');
+        // nombre d'articles récupérés
+        $nbarticles = mysqli_num_rows($query);
+        // transformation en tableau indexé contenant des tableaux associatifs
+        $resultat = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
-$resultat5 = mysqli_fetch_all($query5, MYSQLI_ASSOC);
+        // appel de la vue
+        include_once '../view/homepageView.php';
 
-var_dump($resultat5);
+
+}
