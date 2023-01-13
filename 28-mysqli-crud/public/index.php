@@ -74,12 +74,46 @@ var_dump($resultat3);
 
 // création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant, et tous les champs de toutes les rubriques dans lesquelles se trouvent les articles (! si l'article ne se trouve dans aucune rubrique, on veut le voir quand même)
 
-$sql4="SELECT a.idarticles, a.art_title, SUBSTR(a.art_text,1,250) AS art_text, a.art_date, u.user_login, u.idusers FROM `articles` a
-INNER JOIN users u
-ON u.idusers = a.users_idusers";
+$sql4="SELECT a.idarticles, a.art_title, 
+    SUBSTR(a.art_text,1,250) AS art_text, a.art_date, 
+    u.user_login, u.idusers, 
+    r.*
+    FROM `articles` a
+        INNER JOIN users u
+        ON u.idusers = a.users_idusers
+        LEFT JOIN articles_has_rubriques ahr 
+        ON ahr.articles_idarticles = a.idarticles
+        LEFT JOIN rubriques r 
+        ON ahr.rubriques_idrubriques = r.idrubriques
+        "
+        ;
 
 $query4 = mysqli_query($db,$sql4) or die('Erreur de $query4');
 
 $resultat4 = mysqli_fetch_all($query4, MYSQLI_ASSOC);
 
 var_dump($resultat4);
+
+// création d'une requête pour la page d'accueil qui va ramener tous les champs de la table `articles`, avec `articles`.`art_text` coupé à 250 caractères, ainsi que le `users`.`user_login` et `users`.`idusers` correspondant, et l'id et le titre de toutes les rubriques dans lesquelles se trouvent les articles (! si l'article ne se trouve dans aucune rubrique, on veut le voir quand même -> LEFT JOIN) ! nous souhaitons n'avoir qu'un résultat, mais avec tous les champs récupérés
+
+$sql5="SELECT a.idarticles, a.art_title, 
+    SUBSTR(a.art_text,1,250) AS art_text, a.art_date, 
+    u.user_login, u.idusers, 
+    GROUP_CONCAT(r.idrubriques) AS idrubriques, 
+    GROUP_CONCAT(r.rub_title SEPARATOR '|||') AS rub_title
+    FROM `articles` a
+        INNER JOIN users u
+        ON u.idusers = a.users_idusers
+        LEFT JOIN articles_has_rubriques ahr 
+        ON ahr.articles_idarticles = a.idarticles
+        LEFT JOIN rubriques r 
+        ON ahr.rubriques_idrubriques = r.idrubriques
+        GROUP BY a.idarticles
+        "
+        ;
+
+$query5 = mysqli_query($db,$sql5) or die('Erreur de $query5');
+
+$resultat5 = mysqli_fetch_all($query5, MYSQLI_ASSOC);
+
+var_dump($resultat5);
