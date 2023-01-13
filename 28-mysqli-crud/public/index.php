@@ -40,7 +40,7 @@ Router
 
 // si on est sur la page d'accueil
 // si il n'existe pas de variable get nommée section ou de variable get nommée article ou de variable get nommée auteur
-if(!isset($_GET['section']) || !isset($_GET['article']) || !isset($_GET['article'])){
+if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur'])){
 
     // requête qui récupère tous articles avec 255 caractères de texte avec l'auteur cliquable et les rubriques cliquables pour notre page d'accueil
 
@@ -68,7 +68,7 @@ if(!isset($_GET['section']) || !isset($_GET['article']) || !isset($_GET['article
         ON ahr.articles_idarticles = a.idarticles # condition de jointure entre la table article et celle de jointure
         LEFT JOIN rubriques r # on joint la table voulue par le many to many en utilisant la table de jointure et la table rubriques (renommée r)
         ON ahr.rubriques_idrubriques = r.idrubriques # condition de jointure entre la table jointure (ahr) et la table voulue (r)
-        WHERE a.idarticles = 5
+        # WHERE a.idarticles = 5
         /*
         on groupe par l'index (clef primaire) de la table principale (FROM articles)
         */
