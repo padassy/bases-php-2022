@@ -36,6 +36,7 @@
         $rubriques .= "<a href='?section=$valeur'>{$nomsection[$clef]}</a> | ";
     }
     ?>
+    
     <h4><?=$rubriques?></h4>
     <p><?=$item['art_text']?>... <a href="?article=<?=$item['idarticles']?>">Lire la suite</a></p>
     <h4>Ecrit par <a href="?auteur=<?=$item['idusers']?>"><?=$item['user_login']?></a></h4>
