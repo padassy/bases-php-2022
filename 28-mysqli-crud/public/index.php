@@ -73,6 +73,8 @@ if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur'
         on groupe par l'index (clef primaire) de la table principale (FROM articles)
         */
         GROUP BY a.idarticles
+        /* classement par date de l'article */
+        ORDER BY a.art_date DESC
         "
         ;
 
