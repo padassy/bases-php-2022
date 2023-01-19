@@ -98,6 +98,23 @@ if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur'
     // transformation en tableau indexé contenant des tableaux associatifs
     $resultatRubriques = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
+    // si le formulaire POST est envoyé
+    if(isset($_POST['art_title'],$_POST['art_text'],)){
+        // traitement de sécurité https://listphp.webdev-cf2m.be/ -> priorité des (), d'abord le trim, retire les espaces vides devant et derrière, puis le strip_tags qui retire tous les tags html, css, js etc..., puis htmlspecialchars qui encode les caractères dangereux en entités html, le ENT_QUOTE lui permet de convertire les caractères : ' et "
+        $title = htmlspecialchars(strip_tags(trim($_POST['art_title'])),ENT_QUOTES);
+        $texte = htmlspecialchars(strip_tags(trim($_POST['art_text'])),ENT_QUOTES);
+        
+        // si ils ne sont pas vides
+        if(!empty($title)&&!empty($texte)){
+            //on crée la requête
+            $sql = "INSERT INTO articles (art_title,art_text) VALUES ('$title','$texte');";
+            //on effectue l'insertion
+            mysqli_query($db,$sql) or die (mysqli_error($db));
+            // redirection vers l'accueil'
+            header("Location: ./");
+        }
+    }
+
     // on appel la vue
     include_once '../view/adminView.php';
 }
