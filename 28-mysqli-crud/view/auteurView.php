@@ -7,17 +7,11 @@
     <title>Auteur : ? </title>
 </head>
 <body>
+/* nous sommes ici */
     <h1>Auteur : ? </h1>
-    <nav class="inline-block;">
-        <a href="./">Accueil</a>
-        <?php
-        foreach($resultatRubriques AS $item):
-        ?>
-        <a href="?section=<?=$item['idrubriques']?>"><?=$item['rub_title']?></a>
-        <?php
-        endforeach;
-        ?>
-    </nav>
+    <?php
+    include "inc/menuPublicView.php";
+    ?>
     
     <?php
     // pas d'articles

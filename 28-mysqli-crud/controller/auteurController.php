@@ -11,3 +11,4 @@ $query = mysqli_query($db,$sql) or die('Erreur de $query');
 // transformation en tableau indexé contenant des tableaux associatifs
 $resultatRubriques = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
+/* nous sommes ici */

@@ -39,8 +39,8 @@ Router
  */
 
 // si on est sur la page d'accueil
-// si il n'existe pas de variable get nommée section ET de variable get nommée article ET de variable get nommée auteur
-if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur'])){
+// si il n'existe pas de variable get nommée section ET de variable get nommée article ET de variable get nommée auteur ET de variable get nommée admin
+if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur']) && !isset($_GET['admin'])){
 
         // appel du contrôleur de la homepage
         include_once '../controller/homepageController.php';
