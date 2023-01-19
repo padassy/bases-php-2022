@@ -84,4 +84,20 @@ if(!isset($_GET['section']) && !isset($_GET['article']) && !isset($_GET['auteur'
         include_once '../view/404View.php';
     }   
 
+    /* nous sommes ici */
+
+// Si on est sur l'admin
+}elseif(isset($_GET['admin'])){
+
+    // requête pour le menu des rubriques
+    $sql = "SELECT idrubriques, rub_title FROM rubriques
+    # WHERE idrubriques = 20
+    ORDER BY rub_title ASC;";
+    // exécution de la requête
+    $query = mysqli_query($db,$sql) or die('Erreur de $query');
+    // transformation en tableau indexé contenant des tableaux associatifs
+    $resultatRubriques = mysqli_fetch_all($query, MYSQLI_ASSOC);
+
+    // on appel la vue
+    include_once '../view/adminView.php';
 }
