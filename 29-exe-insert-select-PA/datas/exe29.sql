@@ -29,6 +29,7 @@ DROP TABLE IF EXISTS `adresses`;
 CREATE TABLE IF NOT EXISTS `adresses` (
                                           `idadresses` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
                                           `nomadresses` varchar(200) NOT NULL,
+                                          `prenomadresses` varchar(200) NOT NULL,
                                           `mailadresses` varchar(250) NOT NULL,
                                           `dateadresses` datetime NOT NULL DEFAULT current_timestamp(),
                                           PRIMARY KEY (`idadresses`),
