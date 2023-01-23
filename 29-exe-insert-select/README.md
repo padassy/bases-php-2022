@@ -9,15 +9,15 @@ Il faut sur la même page afficher par date DESC toutes les adresses insérées.
 
 Affichez "Pas encore d'adresses" si pas d'adresses.
 
-Affichez une erreur si l'adresse existe déjà.
+Affichez une erreur si la mailadresses  existe déjà (champs unique !).
 
-Affichez une erreur si le format de l'adresse n'est pas valide.
+Affichez une erreur si le format de l'adresse mail n'est pas valide.
 
 Affichez une erreur si un champs est vide.
 
 La table doit être protégée contre les attaques !
 
-Bonus 1: ne pas afficher les 5 premiers caractères des adresses (mais elles se trouvent dans la DB de manière complètes) :
+Bonus 1: ne pas afficher les 5 premiers caractères des adresses mail (mais elles se trouvent dans la DB de manière complètes) :
 
         pitz michaël *****el.j.pitz@gmail.com
 
