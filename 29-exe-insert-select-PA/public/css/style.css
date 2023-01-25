@@ -1,6 +1,8 @@
 body {
     background-image: url(../img/FOND.png);
     font-family: "Inter";
+    max-width: 100vw;
+
 }
 
 
@@ -55,6 +57,7 @@ form{
     width: 30vw;
     justify-content: space-between;
     height: 5vh;
+    align-items: center;
 }
 
 
@@ -78,6 +81,7 @@ form{
     display: flex;
     flex-direction: row;
     margin-bottom: 3vh;
+    align-items: center;
 }
 
 .mail input {
@@ -98,9 +102,9 @@ form{
     margin: 0 auto 3vh auto;
 }
 #captcha {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none;
+    -webkit-user-select: none;  /*Safari */
+    -ms-user-select: none; /*IE 10+ */
+    /*user-select: none;*/
 
     background-color: white;
     display: inline;
@@ -171,4 +175,48 @@ form{
 
 .header{
     margin: 7.5vh 12.5vw;
+}
+
+/*.messageErreur {
+    position: absolute;
+    top: 0;
+    left: 13vw;
+    color: red;
+    
+}
+.message {
+    position: absolute;
+    top: 0;
+    left: 13vw;
+    color: green;
+}
+
+.messageErreur {
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    color: red;
+}*/
+.message{
+
+    z-index: 3;
+    color: red;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+#goodMessage{
+    color: green;
+}
+
+#boxMessage{
+    width: 97.5vw;
+    padding: 0;
+    margin: 2.5vh 0;
 }

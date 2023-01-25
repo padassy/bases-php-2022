@@ -76,3 +76,14 @@
 				
 			
 			captchaCF2M(redirectionDuckduck, 6)
+
+			const input = document.querySelector('.compteur');
+			const counter = document.querySelector('#compteurLettre');
+			const maxLength = input.getAttribute('maxlength');
+			input.addEventListener('input', event => {
+				const valueLength = event.target.value.length;
+				const leftCharLength = maxLength - valueLength;
+			  
+				if (leftCharLength < 0) return;
+				counter.innerText = leftCharLength;
+			  });
