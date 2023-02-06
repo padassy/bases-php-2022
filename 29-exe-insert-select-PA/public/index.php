@@ -7,7 +7,7 @@ try{
     //var_dump($baseDeDonnees);
     mysqli_set_charset($baseDeDonnees, DB_CHARSET);
 }catch(Exception $e){
-    exit(mb_convert_encoding($e->getMessage(), 'UFT-8', 'ISO-8859-1'));
+    exit(mb_convert_encoding($e->getMessage(), 'UTF-8', 'ISO-8859-1'));
 }
     
 $requeteSql = "SELECT ad.nomadresses, ad.prenomadresses, ad.mailadresses, ad.dateadresses FROM adresses ad ORDER BY dateadresses DESC" ;
@@ -29,7 +29,7 @@ if(isset($_POST['nomadresses'],$_POST['mailadresses'],$_POST['prenomadresses']))
     
 
     if(!empty($nom)&&!empty($mail)&&!empty($prenom)&&filter_var($mail,FILTER_VALIDATE_EMAIL)):
-        $envoiSql = "INSERT INTO adresses (nomadresses,prenomadresses, mailadresses) VALUES ('$nom','$prenom','$mail');";
+        $envoiSql = "INSERT INTO adresses (nomadresses,prenomadresses, mailadresses) VALUES ('$nom','$prenom','$mail')";
         try{
             mysqli_query($baseDeDonnees,$envoiSql);
             $message= "Merci pour votre inscription!";
